@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self'; script-src 'self' blob:; worker-src 'self' blob:; style-src 'self' 'unsafe-inline'; media-src 'self' blob:; img-src 'self' data: blob:;" />
+  <title>Melt Deck</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-mark"></span>
+      <span class="brand-name">MELT<b>DECK</b></span>
+      <span class="brand-by">by Meltdown Empire</span>
+    </div>
+
+    <div class="master">
+      <div class="rec-wrap">
+        <button id="recBtn" class="rec-btn" title="Record your mix to a WAV file">
+          <span class="rec-dot"></span><span id="recLabel">REC</span>
+        </button>
+        <span id="recTime" class="rec-time">0:00</span>
+      </div>
+      <div class="master-meter">
+        <span class="label">MASTER</span>
+        <canvas id="masterVu" width="200" height="14"></canvas>
+      </div>
+      <div class="knob-cell master-knob">
+        <div class="knob" id="masterKnob"></div>
+        <span class="label">VOL</span>
+      </div>
+    </div>
+  </header>
+
+  <section class="waves">
+    <div class="wave-row" data-deck="A"><canvas class="detail"></canvas><span class="wave-tag">A</span></div>
+    <div class="wave-row" data-deck="B"><canvas class="detail"></canvas><span class="wave-tag">B</span></div>
+  </section>
+
+  <main class="console">
+    <section class="deck" id="deckA" data-deck="A"></section>
+
+    <section class="mixer">
+      <div class="channels">
+        <div class="channel" id="chA" data-deck="A"></div>
+        <div class="channel mirror" id="chB" data-deck="B"></div>
+      </div>
+      <div class="xfader-wrap">
+        <span class="xf-end">A</span>
+        <input type="range" id="xfader" min="-1000" max="1000" value="0" title="Crossfader (double-click to center)" />
+        <span class="xf-end">B</span>
+        <button id="curveBtn" class="small-btn" title="Crossfader curve">SMOOTH</button>
+      </div>
+    </section>
+
+    <section class="deck mirror" id="deckB" data-deck="B"></section>
+  </main>
+
+  <section class="library" id="library">
+    <div class="lib-bar">
+      <button id="addBtn" class="lib-add">+ ADD MUSIC</button>
+      <input id="fileInput" type="file" accept="audio/*,.mp3,.wav,.aif,.aiff,.flac,.m4a,.aac,.ogg" multiple hidden />
+      <input id="search" type="search" placeholder="Search tracks…" />
+      <span class="lib-count" id="libCount">0 tracks</span>
+      <span class="keys">Keys — A: <kbd>Q</kbd> play <kbd>W</kbd> cue <kbd>1-4</kbd> hot cues <kbd>S</kbd> sync · B: <kbd>P</kbd> play <kbd>O</kbd> cue <kbd>7-0</kbd> hot cues <kbd>L</kbd> sync · <kbd>←</kbd><kbd>→</kbd> crossfader</span>
+    </div>
+    <div class="lib-table-wrap">
+      <table class="lib-table">
+        <thead>
+          <tr><th class="c-num">#</th><th>Title</th><th>Artist</th><th class="c-bpm">BPM</th><th class="c-len">Time</th><th class="c-load">Load</th></tr>
+        </thead>
+        <tbody id="libBody"></tbody>
+      </table>
+      <div class="lib-empty" id="libEmpty">
+        <div class="drop-icon">⬇</div>
+        <div>Drag songs here, or click <b>+ ADD MUSIC</b></div>
+        <small>MP3, WAV, AIFF, FLAC, M4A</small>
+      </div>
+    </div>
+  </section>
+
+  <div class="drop-overlay" id="dropOverlay"><div>Drop to add to your library</div></div>
+  <div class="toast" id="toast"></div>
+
+  <script src="analyzer.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

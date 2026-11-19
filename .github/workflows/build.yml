@@ -1,0 +1,72 @@
+# Builds the Melt Deck installers (Windows .exe + Mac .dmg) on GitHub's own
+# computers every time code is pushed, then posts them on the repo's
+# "Releases" page so you can download them.
+name: Build installers
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch: # adds a "Run workflow" button on the Actions tab
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [macos-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install tools
+        run: npm install
+
+      - name: Build Mac installer
+        if: runner.os == 'macOS'
+        run: npx electron-builder --mac --publish never
+        env:
+          CSC_IDENTITY_AUTO_DISCOVERY: false
+
+      - name: Build Windows installer
+        if: runner.os == 'Windows'
+        run: npx electron-builder --win --publish never
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: melt-deck-${{ runner.os }}
+          path: |
+            dist/*.dmg
+            dist/*.exe
+          if-no-files-found: error
+
+  release:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          path: installers
+          merge-multiple: true
+
+      - uses: softprops/action-gh-release@v2
+        with:
+          tag_name: build-${{ github.run_number }}
+          name: Melt Deck — build ${{ github.run_number }}
+          target_commitish: ${{ github.sha }}
+          make_latest: true
+          files: installers/*
+          body: |
+            **Download the one for your computer:**
+            - **Windows:** `Melt-Deck-…-win-x64.exe`
+            - **Mac with Apple chip (M1/M2/M3/M4):** `Melt-Deck-…-mac-arm64.dmg`
+            - **Older Intel Mac:** `Melt-Deck-…-mac-x64.dmg`
+
+            First launch: on Windows click **More info → Run anyway**.
+            On Mac, right-click the app → **Open** → **Open** (or System Settings → Privacy & Security → **Open Anyway**).
