@@ -39,7 +39,9 @@ Open this repo's **Releases** page (right side of the main repo page) and grab t
 4. Click a control in Melt Deck (for example Deck A **PLAY**), then press or move the control on your hardware. It turns green, which means it's linked.
 5. Repeat for everything you want, then click **DONE**.
 
-Knobs, faders and pitch wheels work for knobs and faders. Pads, keys and buttons work for buttons. While learning, right-click a control to unlink it. Your links are saved and come back every time you open Melt Deck. The **▲ ▼** buttons by the search box (also linkable) step through the library, and each deck's **LOAD** button, when linked over MIDI, loads the selected track.
+Knobs, faders and pitch wheels work for knobs and faders. Pads, keys and buttons work for buttons. While learning, right-click a control to unlink it. Your links are saved and come back every time you open Melt Deck. **Controller lights.** If your controller has lit buttons or pads, Melt Deck lights them to match the app. PLAY blinks when a track is ready and stays lit while it plays. CUE is lit while a deck is paused. Hot cue pads light once they're set, and the active loop, key lock and REC light up too. Knobs with LED rings follow changes you make with the mouse. Each device in the MIDI panel has a **LIGHTS ON/OFF** switch. Turn it off if a device makes sounds when Melt Deck talks back to it, which can happen with a sampler like the MPC.
+
+The **▲ ▼** buttons by the search box (also linkable) step through the library, and each deck's **LOAD** button, when linked over MIDI, loads the selected track.
 
 ### Keyboard
 

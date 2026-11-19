@@ -394,3 +394,9 @@ body.midi-learn [data-midi].midi-target { outline: 3px solid var(--gold); outlin
 .learn-bar[hidden] { display: none; }
 .learn-tag { background: var(--gold); color: #000; font-weight: 900; font-size: 10px; letter-spacing: 0.12em; padding: 3px 7px; border-radius: 4px; }
 .learn-done { background: var(--gold); color: #000; border: 0; border-radius: 6px; padding: 6px 14px; font-weight: 900; letter-spacing: 0.08em; }
+.mp-devices .dev-name { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.lights-btn {
+  flex: none; background: transparent; border: 1px solid var(--line-2); border-radius: 5px;
+  font-size: 9px; font-weight: 800; letter-spacing: 0.08em; padding: 3px 7px; color: var(--muted);
+}
+.lights-btn.on { color: #000; background: var(--gold); border-color: var(--gold); }

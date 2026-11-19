@@ -13,26 +13,41 @@ const MeltMidi = (() => {
   let learnTarget = null;
   let access = null;
   let shiftHeld = false;
+  const pressedTargets = new Set(); // buttons currently held down on hardware
+  const lastSent = {};              // midiKey -> last light value sent
+  const testOutputs = [];           // used only by automated tests
 
   /* ---------- saved mappings ---------- */
-  try { mappings = JSON.parse(localStorage.getItem(STORE_KEY) || '{}') || {}; } catch (_) { mappings = {}; }
+  const DEV_KEY = 'meltdeck.midi.devices.v1';
+  const NOLIGHTS_KEY = 'meltdeck.midi.nolights.v1';
+  const load = (k, fallback) => { try { return JSON.parse(localStorage.getItem(k) || 'null') || fallback; } catch (_) { return fallback; } };
+  mappings = load(STORE_KEY, {});
+  let keyDevice = load(DEV_KEY, {});             // midiKey -> name of the device it came from
+  const noLights = new Set(load(NOLIGHTS_KEY, [])); // devices with light feedback switched off
+  const store = (k, v) => { try { localStorage.setItem(k, JSON.stringify(v)); } catch (_) { /* storage unavailable */ } };
   const save = () => {
-    try { localStorage.setItem(STORE_KEY, JSON.stringify(mappings)); } catch (_) { /* storage unavailable */ }
+    store(STORE_KEY, mappings);
+    store(DEV_KEY, keyDevice);
     refreshMappedMarks();
   };
 
   /* ---------- what can be controlled ---------- */
-  function addButton(id, label, el, press, release) {
+  // lit(): should this button's light be on? (default: lit while held)
+  function addButton(id, label, el, press, release, lit) {
     if (!el) return;
     el.dataset.midi = id;
-    targets.set(id, { id, label, type: 'button', el, press, release });
+    targets.set(id, { id, label, type: 'button', el, press, release, lit });
   }
-  function addRange(id, label, el, set) {
+  // get(): current position 0..1 (sent back to LED rings / motor faders)
+  function addRange(id, label, el, set, get) {
     if (!el) return;
     el.dataset.midi = id;
-    targets.set(id, { id, label, type: 'range', el, set });
+    targets.set(id, { id, label, type: 'range', el, set, get });
   }
   const knobRange = (knob) => (v) => knob.set(knob.min + v * (knob.max - knob.min));
+  const knobGet = (knob) => () => (knob.value - knob.min) / (knob.max - knob.min);
+  const sliderGet = (input) => () => (+input.value - +input.min) / (+input.max - +input.min);
+  const blink = () => performance.now() % 1000 < 500;
   const sliderRange = (input, after) => (v) => {
     const min = +input.min, max = +input.max;
     input.value = Math.round(min + v * (max - min));
@@ -44,11 +59,15 @@ const MeltMidi = (() => {
     for (const d of [decks.A, decks.B]) {
       const p = d.id, el = d.el, ch = $(`#ch${p}`);
       const name = `Deck ${p}`;
-      addButton(`${p}.play`, `${name} Play`, d.ui.play, () => d.togglePlay());
-      addButton(`${p}.cue`, `${name} Cue`, d.ui.cue, () => d.cueDown(), () => d.cueUp());
+      addButton(`${p}.play`, `${name} Play`, d.ui.play, () => d.togglePlay(), null,
+        () => (d.playing && !d.cuePreview) || (!!d.track && !d.playing && blink())); // blinks when ready
+      addButton(`${p}.cue`, `${name} Cue`, d.ui.cue, () => d.cueDown(), () => d.cueUp(),
+        () => !!d.track && (!d.playing || d.cuePreview));
       addButton(`${p}.sync`, `${name} Sync`, d.ui.sync, () => d.sync());
-      d.ui.pads.forEach((pad, i) => addButton(`${p}.hc${i + 1}`, `${name} Hot cue ${i + 1}`, pad, () => d.hotcue(i, shiftHeld)));
-      d.ui.loops.forEach((b) => addButton(`${p}.loop${b.dataset.loop}`, `${name} ${b.dataset.loop}-beat loop`, b, () => d.toggleLoop(+b.dataset.loop)));
+      d.ui.pads.forEach((pad, i) => addButton(`${p}.hc${i + 1}`, `${name} Hot cue ${i + 1}`, pad, () => d.hotcue(i, shiftHeld), null,
+        () => d.hotcues[i] != null));
+      d.ui.loops.forEach((b) => addButton(`${p}.loop${b.dataset.loop}`, `${name} ${b.dataset.loop}-beat loop`, b, () => d.toggleLoop(+b.dataset.loop), null,
+        () => !!d.loop && d.loop.beats === +b.dataset.loop));
       addButton(`${p}.tap`, `${name} Tap BPM`, d.ui.tap, () => d.tap());
       addButton(`${p}.half`, `${name} BPM ÷2`, $('[data-act="half"]', el), () => d.scaleBpm(0.5));
       addButton(`${p}.double`, `${name} BPM ×2`, $('[data-act="double"]', el), () => d.scaleBpm(2));
@@ -59,17 +78,17 @@ const MeltMidi = (() => {
           () => { d.nudge = 1 + dir * 0.04; d.applyRate(); },
           () => { d.nudge = 1; d.applyRate(); });
       }
-      addButton(`${p}.keylock`, `${name} Key lock`, d.ui.keylock, () => d.ui.keylock.click());
-      addButton(`${p}.range`, `${name} Tempo range`, d.ui.range, () => d.ui.range.click());
-      addRange(`${p}.tempo`, `${name} Tempo`, d.ui.tempo, (v) => d.setTempo((v * 2 - 1) * d.range));
+      addButton(`${p}.keylock`, `${name} Key lock`, d.ui.keylock, () => d.ui.keylock.click(), null, () => d.keylock);
+      addButton(`${p}.range`, `${name} Tempo range`, d.ui.range, () => d.ui.range.click(), null, () => d.range > 0.08);
+      addRange(`${p}.tempo`, `${name} Tempo`, d.ui.tempo, (v) => d.setTempo((v * 2 - 1) * d.range), sliderGet(d.ui.tempo));
       const kn = { trim: 'Trim', hi: 'High EQ', mid: 'Mid EQ', lo: 'Low EQ', filter: 'Filter' };
-      for (const [k, label] of Object.entries(kn)) addRange(`${p}.${k}`, `${name} ${label}`, d.knobs[k].el, knobRange(d.knobs[k]));
-      addRange(`${p}.volume`, `${name} Volume fader`, $('.chfader', ch), sliderRange($('.chfader', ch)));
+      for (const [k, label] of Object.entries(kn)) addRange(`${p}.${k}`, `${name} ${label}`, d.knobs[k].el, knobRange(d.knobs[k]), knobGet(d.knobs[k]));
+      addRange(`${p}.volume`, `${name} Volume fader`, $('.chfader', ch), sliderRange($('.chfader', ch)), sliderGet($('.chfader', ch)));
     }
-    addRange('crossfader', 'Crossfader', xfader, sliderRange(xfader));
-    addRange('master', 'Master volume', masterKnob.el, knobRange(masterKnob));
-    addButton('curve', 'Crossfader curve', $('#curveBtn'), () => $('#curveBtn').click());
-    addButton('rec', 'Record mix', $('#recBtn'), () => recorder.toggle());
+    addRange('crossfader', 'Crossfader', xfader, sliderRange(xfader), sliderGet(xfader));
+    addRange('master', 'Master volume', masterKnob.el, knobRange(masterKnob), knobGet(masterKnob));
+    addButton('curve', 'Crossfader curve', $('#curveBtn'), () => $('#curveBtn').click(), null, () => curve === 'cut');
+    addButton('rec', 'Record mix', $('#recBtn'), () => recorder.toggle(), null, () => recorder.on);
     addButton('libUp', 'Library: previous track', $('#libUp'), () => libraryStep(-1));
     addButton('libDown', 'Library: next track', $('#libDown'), () => libraryStep(1));
   }
@@ -110,9 +129,10 @@ const MeltMidi = (() => {
 
   const lastPressed = new Map(); // midiKey -> was pressed (for CC buttons)
 
-  function handle(data) {
+  function handle(data, deviceName = '') {
     const m = parse(data);
     if (!m) return;
+    if (deviceName && keyDevice[m.key] !== deviceName && mappings[m.key]) { keyDevice[m.key] = deviceName; store(DEV_KEY, keyDevice); }
     $('#midiMonitor').textContent = m.desc;
     flashLed();
 
@@ -122,6 +142,8 @@ const MeltMidi = (() => {
       const t = targets.get(learnTarget);
       if (t.type === 'range' && m.kind === 'note') { toast(`Use a knob or fader for "${t.label}" (pads/keys work for buttons)`); return; }
       mappings[m.key] = t.id;
+      if (deviceName) keyDevice[m.key] = deviceName;
+      delete lastSent[m.key];
       save();
       toast(`Linked: ${t.label}  ←  ${m.desc.replace(/ (on|off)$| = .*$/, '')}`);
       setLearnTarget(null);
@@ -132,23 +154,91 @@ const MeltMidi = (() => {
     const t = id && targets.get(id);
     if (!t) return;
     resumeAudio();
-    if (t.type === 'range') { t.set(m.value); return; }
+    if (t.type === 'range') {
+      lastSent[m.key] = Math.round(m.value * 127); // don't echo the move back
+      t.set(m.value);
+      return;
+    }
     // Buttons: react to press / release edges.
     const was = lastPressed.get(m.key) || false;
     lastPressed.set(m.key, m.pressed);
-    if (m.pressed && !was) t.press();
-    else if (!m.pressed && was && t.release) t.release();
+    if (m.pressed && !was) { pressedTargets.add(t.id); t.press(); }
+    else if (!m.pressed && was) { pressedTargets.delete(t.id); if (t.release) t.release(); }
+  }
+
+  /* ---------- light feedback (MIDI out) ---------- */
+  const norm = (n) => String(n || '').toLowerCase().replace(/\b(in|out|input|output|midi ?in|midi ?out)\b/g, '').replace(/[^a-z0-9]+/g, ' ').trim();
+  function allOutputs() {
+    return [...(access ? [...access.outputs.values()] : []), ...testOutputs];
+  }
+  // The output that belongs to the same device a control was learned from.
+  function outputFor(deviceName) {
+    if (!deviceName || noLights.has(deviceName)) return null;
+    const outs = allOutputs().filter((o) => o.state !== 'disconnected');
+    return outs.find((o) => o.name === deviceName) || outs.find((o) => norm(o.name) === norm(deviceName)) || null;
+  }
+  function sendLight(out, key, val) {
+    const [kind, ch, num] = key.split(':');
+    const c = (+ch - 1) & 15;
+    try {
+      if (kind === 'note') out.send([0x90 | c, +num & 127, val]);
+      else if (kind === 'cc') out.send([0xb0 | c, +num & 127, val]);
+    } catch (_) { /* device went away */ }
+  }
+  function desiredValue(t) {
+    if (t.type === 'range') return t.get ? Math.round(clamp(t.get(), 0, 1) * 127) : null;
+    return (t.lit ? t.lit() : pressedTargets.has(t.id)) ? 127 : 0;
+  }
+  function feedbackTick() {
+    for (const [key, id] of Object.entries(mappings)) {
+      if (key.startsWith('pb:')) continue;
+      const t = targets.get(id);
+      if (!t) continue;
+      const out = outputFor(keyDevice[key]);
+      if (!out) continue;
+      const val = desiredValue(t);
+      if (val == null) continue;
+      const prev = lastSent[key];
+      if (prev === val) continue;
+      if (t.type === 'range' && prev != null && Math.abs(prev - val) <= 1) continue; // ignore tiny wobble
+      sendLight(out, key, val);
+      lastSent[key] = val;
+    }
+  }
+  function lightsOff(deviceName) {
+    for (const [key, id] of Object.entries(mappings)) {
+      if (deviceName && keyDevice[key] !== deviceName) continue;
+      const t = targets.get(id);
+      const out = allOutputs().find((o) => o.name === keyDevice[key] || norm(o.name) === norm(keyDevice[key]));
+      if (t && t.type === 'button' && out) sendLight(out, key, 0);
+      delete lastSent[key];
+    }
+  }
+  function toggleLights(deviceName) {
+    if (noLights.has(deviceName)) noLights.delete(deviceName);
+    else { lightsOff(deviceName); noLights.add(deviceName); }
+    store(NOLIGHTS_KEY, [...noLights]);
+    Object.keys(lastSent).forEach((k) => { if (keyDevice[k] === deviceName) delete lastSent[k]; });
+    refreshDevices();
   }
 
   /* ---------- devices ---------- */
   function refreshDevices() {
     const list = $('#midiDevices');
     const inputs = access ? [...access.inputs.values()] : [];
-    inputs.forEach((inp) => { inp.onmidimessage = (e) => handle(e.data); });
+    inputs.forEach((inp) => { inp.onmidimessage = (e) => handle(e.data, inp.name); });
+    Object.keys(lastSent).forEach((k) => delete lastSent[k]); // re-send all lights after (re)connect
+    const outNames = new Set(allOutputs().map((o) => norm(o.name)));
     $('#midiCount').textContent = inputs.length;
     $('#midiBtn').classList.toggle('has-devices', inputs.length > 0);
     list.innerHTML = inputs.length
-      ? inputs.map((i) => `<li><span class="dot ${i.state === 'connected' ? 'on' : ''}"></span>${escapeHtml(i.name || 'MIDI device')}</li>`).join('')
+      ? inputs.map((i) => {
+        const hasOut = outNames.has(norm(i.name));
+        const lights = hasOut
+          ? `<button class="lights-btn ${noLights.has(i.name) ? '' : 'on'}" data-dev="${escapeHtml(i.name)}" title="Light up this controller's buttons to match Melt Deck">LIGHTS ${noLights.has(i.name) ? 'OFF' : 'ON'}</button>`
+          : '';
+        return `<li><span class="dot ${i.state === 'connected' ? 'on' : ''}"></span><span class="dev-name">${escapeHtml(i.name || 'MIDI device')}</span>${lights}</li>`;
+      }).join('')
       : '<li class="none">No MIDI devices found. Plug in your controller (or a USB-MIDI cable) — it appears here automatically.</li>';
   }
 
@@ -233,6 +323,12 @@ const MeltMidi = (() => {
     $('#midiBtn').addEventListener('click', (e) => { e.stopPropagation(); panel.hidden = !panel.hidden; });
     document.addEventListener('click', (e) => { if (!panel.hidden && !e.target.closest('.midi-wrap')) panel.hidden = true; });
     $('#learnBtn').addEventListener('click', () => setLearning(!learning));
+    $('#midiDevices').addEventListener('click', (e) => {
+      const b = e.target.closest('[data-dev]');
+      if (b) toggleLights(b.dataset.dev);
+    });
+    setInterval(feedbackTick, 40);
+    window.addEventListener('beforeunload', () => lightsOff(null));
     $('#learnDone').addEventListener('click', () => setLearning(false));
     $('#clearMaps').addEventListener('click', () => {
       if (!Object.keys(mappings).length) return;
@@ -262,5 +358,10 @@ const MeltMidi = (() => {
   }
 
   init();
-  return { handle, targets, get mappings() { return mappings; } };
+  return {
+    handle, targets,
+    get mappings() { return mappings; },
+    // For automated tests only: pretend a controller with lights is connected.
+    __testDevice(name, send) { testOutputs.push({ name, state: 'connected', send }); },
+  };
 })();

@@ -1,7 +1,7 @@
 {
   "name": "melt-deck",
   "productName": "Melt Deck",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Melt Deck - two-deck DJ software by Meltdown Empire",
   "main": "main.js",
   "author": "Meltdown Empire",
