@@ -339,3 +339,58 @@ td.c-bpm { color: var(--gold); }
 ::-webkit-scrollbar { width: 10px; height: 10px; }
 ::-webkit-scrollbar-thumb { background: #2b2631; border-radius: 5px; }
 ::-webkit-scrollbar-track { background: transparent; }
+
+/* ---------- MIDI ---------- */
+.midi-wrap { position: relative; }
+.midi-btn {
+  display: flex; align-items: center; gap: 7px;
+  background: var(--panel-2); border: 1px solid var(--line-2);
+  border-radius: 6px; padding: 6px 12px; font-weight: 800; letter-spacing: 0.1em; font-size: 11px;
+}
+.midi-led { width: 8px; height: 8px; border-radius: 50%; background: #3a3342; transition: background 0.05s; }
+.midi-btn.has-devices .midi-led { background: #1f6b3f; }
+.midi-btn.activity .midi-led { background: #3dff8b; box-shadow: 0 0 8px #3dff8b; }
+.midi-count { font-family: var(--mono); color: var(--muted); }
+.midi-panel {
+  position: absolute; right: 0; top: calc(100% + 8px); width: 330px; z-index: 40;
+  background: #1a171d; border: 1px solid var(--line-2); border-radius: 10px; padding: 14px;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.6);
+}
+.midi-panel[hidden] { display: none; }
+.mp-title { font-size: 10px; letter-spacing: 0.14em; font-weight: 800; color: var(--muted); margin-bottom: 8px; }
+.mp-devices { list-style: none; margin: 0 0 12px; padding: 0; }
+.mp-devices li { display: flex; align-items: center; gap: 8px; padding: 5px 0; font-weight: 600; }
+.mp-devices li.none { color: var(--muted); font-weight: 400; font-size: 12px; }
+.mp-devices .dot { width: 8px; height: 8px; border-radius: 50%; background: #3a3342; }
+.mp-devices .dot.on { background: #3dff8b; }
+.learn-btn {
+  width: 100%; padding: 10px; border-radius: 7px; border: 0; font-weight: 900; letter-spacing: 0.1em; font-size: 12px;
+  background: linear-gradient(90deg, var(--A), var(--gold)); color: #000;
+}
+.learn-btn.on { background: var(--red); color: #fff; }
+.mp-help { margin: 12px 0 6px; padding-left: 18px; color: var(--text); font-size: 12px; line-height: 1.6; }
+.mp-note { color: var(--muted); font-size: 11px; margin-bottom: 10px; }
+.mp-monitor { font-family: var(--mono); font-size: 11px; color: var(--muted); background: #0d0b0f; border-radius: 5px; padding: 6px 8px; }
+.mp-monitor span { color: #3dff8b; }
+.mp-foot { display: flex; align-items: center; justify-content: space-between; margin-top: 10px; color: var(--muted); font-size: 12px; }
+.small-btn.wide { width: auto; padding: 5px 9px; }
+.lib-nav {
+  background: var(--panel-2); border: 1px solid var(--line-2); border-radius: 6px;
+  width: 30px; height: 30px; font-size: 10px; color: var(--muted);
+}
+.lib-nav:hover { color: var(--text); }
+
+/* Learn mode: every linkable control gets a gold outline */
+body.midi-learn [data-midi] { outline: 1px dashed rgba(255, 194, 58, 0.55); outline-offset: 2px; cursor: crosshair !important; }
+body.midi-learn [data-midi].midi-mapped { outline: 2px solid rgba(61, 255, 139, 0.8); }
+body.midi-learn [data-midi].midi-target { outline: 3px solid var(--gold); outline-offset: 3px; animation: learnPulse 0.8s ease-in-out infinite alternate; }
+@keyframes learnPulse { from { outline-color: var(--gold); } to { outline-color: rgba(255, 194, 58, 0.25); } }
+.learn-bar {
+  position: fixed; left: 50%; top: 60px; transform: translateX(-50%); z-index: 50;
+  display: flex; align-items: center; gap: 14px;
+  background: #1f1a12; border: 1px solid var(--gold); border-radius: 10px; padding: 8px 10px 8px 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6); font-weight: 600;
+}
+.learn-bar[hidden] { display: none; }
+.learn-tag { background: var(--gold); color: #000; font-weight: 900; font-size: 10px; letter-spacing: 0.12em; padding: 3px 7px; border-radius: 4px; }
+.learn-done { background: var(--gold); color: #000; border: 0; border-radius: 6px; padding: 6px 14px; font-weight: 900; letter-spacing: 0.08em; }

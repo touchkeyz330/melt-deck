@@ -16,6 +16,23 @@
     </div>
 
     <div class="master">
+      <div class="midi-wrap">
+        <button id="midiBtn" class="midi-btn" title="MIDI controllers"><span class="midi-led"></span>MIDI <span id="midiCount" class="midi-count">0</span></button>
+        <div class="midi-panel" id="midiPanel" hidden>
+          <div class="mp-title">MIDI CONTROLLERS</div>
+          <ul id="midiDevices" class="mp-devices"><li class="none">Looking for MIDI devices…</li></ul>
+          <button id="learnBtn" class="learn-btn">START MIDI LEARN</button>
+          <ol class="mp-help">
+            <li>Click <b>START MIDI LEARN</b></li>
+            <li>Click any button, knob or fader in Melt Deck</li>
+            <li>Press or move the control on your hardware — it's linked</li>
+            <li>Repeat for everything you want, then click <b>DONE</b></li>
+          </ol>
+          <div class="mp-note">Right-click a control while learning to unlink it. Links are saved automatically.</div>
+          <div class="mp-monitor">Last MIDI received: <span id="midiMonitor">—</span></div>
+          <div class="mp-foot"><span id="mapCount">0 controls linked</span><button id="clearMaps" class="small-btn wide">Clear all</button></div>
+        </div>
+      </div>
       <div class="rec-wrap">
         <button id="recBtn" class="rec-btn" title="Record your mix to a WAV file">
           <span class="rec-dot"></span><span id="recLabel">REC</span>
@@ -62,8 +79,10 @@
       <button id="addBtn" class="lib-add">+ ADD MUSIC</button>
       <input id="fileInput" type="file" accept="audio/*,.mp3,.wav,.aif,.aiff,.flac,.m4a,.aac,.ogg" multiple hidden />
       <input id="search" type="search" placeholder="Search tracks…" />
+      <button id="libUp" class="lib-nav" title="Previous track (↑)">▲</button>
+      <button id="libDown" class="lib-nav" title="Next track (↓)">▼</button>
       <span class="lib-count" id="libCount">0 tracks</span>
-      <span class="keys">Keys — A: <kbd>Q</kbd> play <kbd>W</kbd> cue <kbd>1-4</kbd> hot cues <kbd>S</kbd> sync · B: <kbd>P</kbd> play <kbd>O</kbd> cue <kbd>7-0</kbd> hot cues <kbd>L</kbd> sync · <kbd>←</kbd><kbd>→</kbd> crossfader</span>
+      <span class="keys">Keys — A: <kbd>Q</kbd> play <kbd>W</kbd> cue <kbd>1-4</kbd> hot cues <kbd>S</kbd> sync · B: <kbd>P</kbd> play <kbd>O</kbd> cue <kbd>7-0</kbd> hot cues <kbd>L</kbd> sync · <kbd>←</kbd><kbd>→</kbd> crossfader · <kbd>↑</kbd><kbd>↓</kbd> library</span>
     </div>
     <div class="lib-table-wrap">
       <table class="lib-table">
@@ -82,8 +101,14 @@
 
   <div class="drop-overlay" id="dropOverlay"><div>Drop to add to your library</div></div>
   <div class="toast" id="toast"></div>
+  <div class="learn-bar" id="learnBar" hidden>
+    <span class="learn-tag">MIDI LEARN</span>
+    <span id="learnStatus">Click any button, knob or fader in Melt Deck…</span>
+    <button id="learnDone" class="learn-done">DONE</button>
+  </div>
 
   <script src="analyzer.js"></script>
   <script src="app.js"></script>
+  <script src="midi.js"></script>
 </body>
 </html>

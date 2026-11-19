@@ -46,6 +46,11 @@ app.whenReady().then(() => {
     return net.fetch(pathToFileURL(file).toString());
   });
 
+  // Allow MIDI controllers (only MIDI — nothing else is requested).
+  const allowed = new Set(['midi', 'midiSysex']);
+  session.defaultSession.setPermissionRequestHandler((_wc, permission, callback) => callback(allowed.has(permission)));
+  session.defaultSession.setPermissionCheckHandler((_wc, permission) => allowed.has(permission));
+
   // When you stop a mix recording, ask where to save it.
   session.defaultSession.on('will-download', (_event, item) => {
     item.setSaveDialogOptions({

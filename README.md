@@ -29,6 +29,17 @@ Open this repo's **Releases** page (right side of the main repo page) and grab t
 - Master volume with a built-in limiter so the output never clips
 - **REC** records your mix to a WAV file
 - Library: drag songs in, search, see BPM and length, load onto either deck
+- **MIDI control with MIDI Learn**: link any controller, keyboard or MPC to almost every button, knob and fader
+
+## MIDI controllers
+
+1. Plug in your controller. A keyboard that only has a 5-pin MIDI port needs a USB-MIDI interface cable.
+2. Click **MIDI** at the top. Your device shows up in the list, and the light flashes green when MIDI comes in.
+3. Click **START MIDI LEARN**. Every control you can link gets a gold outline.
+4. Click a control in Melt Deck (for example Deck A **PLAY**), then press or move the control on your hardware. It turns green, which means it's linked.
+5. Repeat for everything you want, then click **DONE**.
+
+Knobs, faders and pitch wheels work for knobs and faders. Pads, keys and buttons work for buttons. While learning, right-click a control to unlink it. Your links are saved and come back every time you open Melt Deck. The **▲ ▼** buttons by the search box (also linkable) step through the library, and each deck's **LOAD** button, when linked over MIDI, loads the selected track.
 
 ### Keyboard
 
@@ -39,7 +50,7 @@ Open this repo's **Releases** page (right side of the main repo page) and grab t
 | Hot cues 1–4 | 1 2 3 4 | 7 8 9 0 |
 | Sync | S | L |
 
-Shift + a hot cue clears it. The left and right arrow keys move the crossfader.
+Shift + a hot cue clears it. The left and right arrow keys move the crossfader, and the up and down arrow keys step through the library.
 
 ## How the installers get made
 
