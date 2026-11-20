@@ -1,0 +1,83 @@
+Building Melt Stack by Meltdown Empire  (/home/runner/work/melt-deck/melt-deck/plugins/Melt Stack)
+  toolchain: zig   target: all   release
+Using zig 0.17.1 (from --zig)
+
+[1/7] Native build (for host_sim and testing on this computer)
+  [native] compiling 1 source file -> build/native/melt-stack.so
+  [native] ok (4.2 MB, 3.4s)
+
+[2/7] Parameter dump (host_sim) -> build/params.json
+  host_sim dump -> build/params.json
+
+[3/7] arm32 build (MPC Live/X/One (32-bit))
+  [arm32] compiling 1 source file -> build/Meltdown Empire - VST - Melt Stack/VST/melt-stack-arm32.so
+  [arm32] ok (272 KB, 2.6s)
+
+[4/7] arm64 build (MPC Live II/One+/Key 61/X SE/3 (64-bit))
+  [arm64] compiling 1 source file -> build/Meltdown Empire - VST - Melt Stack/VST/melt-stack-arm64.so
+  [arm64] ok (359 KB, 3.1s)
+
+[5/7] Assemble output folder: build/Meltdown Empire - VST - Melt Stack/
+  copied plugin.json
+  gen_ui.py (ui.json) -> Plugin Skins/
+  gen_ui: WARNING: /home/runner/work/melt-deck/melt-deck/plugins/Melt Stack/ui.json pages[5] name "SEQ/KAOSS" is longer than 8 characters and may be truncated on the tab.
+
+[6/7] version.xml
+  version 1.0.0.0, uiversion 0.1.0.0
+
+[7/7] Validate
+Validating /home/runner/work/melt-deck/melt-deck/plugins/Melt Stack/build/Meltdown Empire - VST - Melt Stack
+OK     plugin.json: Melt Stack by Meltdown Empire (instrument, uid MnjR)
+OK     folder name "Meltdown Empire - VST - Melt Stack"
+OK     file32: melt-stack-arm32.so is a 32-bit ARM shared object
+OK     file32: needed libraries: libm.so.6, libc.so.6, ld-linux-armhf.so.3, libdl.so.2
+OK     file32: max GLIBC requirement 2.27
+OK     file32: exports VSTPluginMain
+OK     file64: melt-stack-arm64.so is a 64-bit AArch64 shared object
+OK     file64: needed libraries: libm.so.6, libc.so.6, libpthread.so.0, libdl.so.2
+OK     file64: max GLIBC requirement 2.27
+OK     file64: exports VSTPluginMain
+OK     uid matches the binary (MnjR)
+OK     name matches the binary (Melt Stack)
+OK     manufacturer matches the binary (Meltdown Empire)
+OK     kind matches the binary (instrument)
+OK     numInputs matches the binary (0)
+OK     numOutputs matches the binary (2)
+OK     TUI.json: all parameter handles are within 0..92
+OK     TUI.json: image fader_h_uni.png present
+OK     TUI.json: image knob_bi.png present
+OK     TUI.json: image knob_uni.png present
+OK     TUI.json: image seg3_off.png present
+OK     TUI.json: image seg3_on.png present
+OK     TUI.json: image seg4_off.png present
+OK     TUI.json: image seg4_on.png present
+OK     TUI.json: image toggle_off.png present
+OK     TUI.json: image toggle_on.png present
+OK     TUI.json: 6 tabs
+OK     Q-Links.json: 6 tab maps, all values in range
+OK     version.xml uiversion 0.1.0.0
+0 errors, 0 warnings
+
+========================================================================
+Build finished: Meltdown Empire - VST - Melt Stack
+  Output folder: /home/runner/work/melt-deck/melt-deck/plugins/Melt Stack/build/Meltdown Empire - VST - Melt Stack
+    plugin.json                              633 B
+    version.xml                              152 B
+    Plugin Skins/Q-Links.json                5 KB
+    Plugin Skins/TUI.json                    239 KB
+    Plugin Skins/fader_h_uni.png             98 KB
+    Plugin Skins/knob_bi.png                 80 KB
+    Plugin Skins/knob_uni.png                79 KB
+    Plugin Skins/seg3_off.png                573 B
+    Plugin Skins/seg3_on.png                 586 B
+    Plugin Skins/seg4_off.png                544 B
+    Plugin Skins/seg4_on.png                 549 B
+    Plugin Skins/toggle_off.png              1 KB
+    Plugin Skins/toggle_on.png               1 KB
+    VST/melt-stack-arm32.so                  272 KB
+    VST/melt-stack-arm64.so                  359 KB
+  Native test build: /home/runner/work/melt-deck/melt-deck/plugins/Melt Stack/build/native/melt-stack.so
+
+Next:
+  * Make a zip for sharing:   python tools/package.py "plugins/Melt Stack"
+  * Or copy the output folder into a folder named "VST2 Plugins" on your MPC's drive (see INSTALL.txt in the zip).

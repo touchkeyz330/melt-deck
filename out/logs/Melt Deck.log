@@ -1,0 +1,105 @@
+Building Melt Deck by Meltdown Empire  (/home/runner/work/melt-deck/melt-deck/plugins/Melt Deck)
+  toolchain: zig   target: all   release
+Using zig 0.17.1 (from --zig)
+
+[1/7] Native build (for host_sim and testing on this computer)
+  [native] compiling 2 source files -> build/native/melt-deck.so
+In file included from /home/runner/work/melt-deck/melt-deck/plugins/Melt Deck/src/MeltDeck.cpp:24:
+In file included from /home/runner/work/melt-deck/melt-deck/plugins/Melt Deck/src/rt_stretch.h:14:
+/home/runner/work/melt-deck/melt-deck/plugins/Melt Deck/src/analysis.h:279:45: warning: variable 'cnt' set but not used [-Wunused-but-set-variable]
+  279 |             std::array<double, 12> m{}; int cnt = 0;
+      |                                             ^
+1 warning generated.
+  [native] ok (4.9 MB, 10.3s)
+
+[2/7] Parameter dump (host_sim) -> build/params.json
+  host_sim dump -> build/params.json
+
+[3/7] arm32 build (MPC Live/X/One (32-bit))
+  [arm32] compiling 2 source files -> build/Meltdown Empire - VST - Melt Deck/VST/melt-deck-arm32.so
+In file included from /home/runner/work/melt-deck/melt-deck/plugins/Melt Deck/src/MeltDeck.cpp:24:
+In file included from /home/runner/work/melt-deck/melt-deck/plugins/Melt Deck/src/rt_stretch.h:14:
+/home/runner/work/melt-deck/melt-deck/plugins/Melt Deck/src/analysis.h:279:45: warning: variable 'cnt' set but not used [-Wunused-but-set-variable]
+  279 |             std::array<double, 12> m{}; int cnt = 0;
+      |                                             ^
+1 warning generated.
+  [arm32] ok (421 KB, 7.4s)
+
+[4/7] arm64 build (MPC Live II/One+/Key 61/X SE/3 (64-bit))
+  [arm64] compiling 2 source files -> build/Meltdown Empire - VST - Melt Deck/VST/melt-deck-arm64.so
+In file included from /home/runner/work/melt-deck/melt-deck/plugins/Melt Deck/src/MeltDeck.cpp:24:
+In file included from /home/runner/work/melt-deck/melt-deck/plugins/Melt Deck/src/rt_stretch.h:14:
+/home/runner/work/melt-deck/melt-deck/plugins/Melt Deck/src/analysis.h:279:45: warning: variable 'cnt' set but not used [-Wunused-but-set-variable]
+  279 |             std::array<double, 12> m{}; int cnt = 0;
+      |                                             ^
+1 warning generated.
+  [arm64] ok (497 KB, 9.1s)
+
+[5/7] Assemble output folder: build/Meltdown Empire - VST - Melt Deck/
+  copied plugin.json
+  gen_ui.py (ui.json) -> Plugin Skins/
+  copied 1 file from Content/ into Content/
+
+[6/7] version.xml
+  version 1.0.0.0, uiversion 0.1.0.0
+
+[7/7] Validate
+Validating /home/runner/work/melt-deck/melt-deck/plugins/Melt Deck/build/Meltdown Empire - VST - Melt Deck
+OK     plugin.json: Melt Deck by Meltdown Empire (instrument, uid MzXw)
+OK     folder name "Meltdown Empire - VST - Melt Deck"
+OK     file32: melt-deck-arm32.so is a 32-bit ARM shared object
+OK     file32: needed libraries: libm.so.6, libc.so.6, ld-linux-armhf.so.3, libpthread.so.0, libdl.so.2
+OK     file32: max GLIBC requirement 2.27
+OK     file32: exports VSTPluginMain
+OK     file64: melt-deck-arm64.so is a 64-bit AArch64 shared object
+OK     file64: needed libraries: libm.so.6, libc.so.6, libpthread.so.0, libdl.so.2
+OK     file64: max GLIBC requirement 2.29
+OK     file64: exports VSTPluginMain
+OK     uid matches the binary (MzXw)
+OK     name matches the binary (Melt Deck)
+OK     manufacturer matches the binary (Meltdown Empire)
+OK     kind matches the binary (instrument)
+OK     numInputs matches the binary (0)
+OK     numOutputs matches the binary (2)
+OK     TUI.json: all parameter handles are within 0..34
+OK     TUI.json: image fader_h_bi.png present
+OK     TUI.json: image fader_h_uni.png present
+OK     TUI.json: image knob_bi.png present
+OK     TUI.json: image knob_uni.png present
+OK     TUI.json: image seg2_off.png present
+OK     TUI.json: image seg2_on.png present
+OK     TUI.json: image seg3_off.png present
+OK     TUI.json: image seg3_on.png present
+OK     TUI.json: image toggle_off.png present
+OK     TUI.json: image toggle_on.png present
+OK     TUI.json: 3 tabs
+OK     Q-Links.json: 3 tab maps, all values in range
+OK     version.xml uiversion 0.1.0.0
+OK     Content/: 1 file, 0.6 MB (loaded by the plugin at run time, see framework/mpc_resources.h)
+0 errors, 0 warnings
+
+========================================================================
+Build finished: Meltdown Empire - VST - Melt Deck
+  Output folder: /home/runner/work/melt-deck/melt-deck/plugins/Melt Deck/build/Meltdown Empire - VST - Melt Deck
+    plugin.json                              534 B
+    version.xml                              152 B
+    Content/Songs/Meltdown Demo 92bpm Amin.mp3 584 KB
+    Plugin Skins/Q-Links.json                3 KB
+    Plugin Skins/TUI.json                    147 KB
+    Plugin Skins/fader_h_bi.png              104 KB
+    Plugin Skins/fader_h_uni.png             98 KB
+    Plugin Skins/knob_bi.png                 80 KB
+    Plugin Skins/knob_uni.png                79 KB
+    Plugin Skins/seg2_off.png                586 B
+    Plugin Skins/seg2_on.png                 597 B
+    Plugin Skins/seg3_off.png                573 B
+    Plugin Skins/seg3_on.png                 586 B
+    Plugin Skins/toggle_off.png              1 KB
+    Plugin Skins/toggle_on.png               1 KB
+    VST/melt-deck-arm32.so                   421 KB
+    VST/melt-deck-arm64.so                   497 KB
+  Native test build: /home/runner/work/melt-deck/melt-deck/plugins/Melt Deck/build/native/melt-deck.so
+
+Next:
+  * Make a zip for sharing:   python tools/package.py "plugins/Melt Deck"
+  * Or copy the output folder into a folder named "VST2 Plugins" on your MPC's drive (see INSTALL.txt in the zip).

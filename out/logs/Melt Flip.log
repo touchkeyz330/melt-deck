@@ -1,0 +1,104 @@
+Building Melt Flip by Meltdown Empire  (/home/runner/work/melt-deck/melt-deck/plugins/Melt Flip)
+  toolchain: zig   target: all   release
+Using zig 0.17.1 (from --zig)
+
+[1/7] Native build (for host_sim and testing on this computer)
+  [native] compiling 2 source files -> build/native/melt-flip.so
+In file included from /home/runner/work/melt-deck/melt-deck/plugins/Melt Flip/src/MeltFlip.cpp:24:
+/home/runner/work/melt-deck/melt-deck/plugins/Melt Flip/src/analysis.h:279:45: warning: variable 'cnt' set but not used [-Wunused-but-set-variable]
+  279 |             std::array<double, 12> m{}; int cnt = 0;
+      |                                             ^
+1 warning generated.
+  [native] ok (5.5 MB, 10.1s)
+
+[2/7] Parameter dump (host_sim) -> build/params.json
+  host_sim dump -> build/params.json
+
+[3/7] arm32 build (MPC Live/X/One (32-bit))
+  [arm32] compiling 2 source files -> build/Meltdown Empire - VST - Melt Flip/VST/melt-flip-arm32.so
+In file included from /home/runner/work/melt-deck/melt-deck/plugins/Melt Flip/src/MeltFlip.cpp:24:
+/home/runner/work/melt-deck/melt-deck/plugins/Melt Flip/src/analysis.h:279:45: warning: variable 'cnt' set but not used [-Wunused-but-set-variable]
+  279 |             std::array<double, 12> m{}; int cnt = 0;
+      |                                             ^
+1 warning generated.
+  [arm32] ok (414 KB, 7.4s)
+
+[4/7] arm64 build (MPC Live II/One+/Key 61/X SE/3 (64-bit))
+  [arm64] compiling 2 source files -> build/Meltdown Empire - VST - Melt Flip/VST/melt-flip-arm64.so
+In file included from /home/runner/work/melt-deck/melt-deck/plugins/Melt Flip/src/MeltFlip.cpp:24:
+/home/runner/work/melt-deck/melt-deck/plugins/Melt Flip/src/analysis.h:279:45: warning: variable 'cnt' set but not used [-Wunused-but-set-variable]
+  279 |             std::array<double, 12> m{}; int cnt = 0;
+      |                                             ^
+1 warning generated.
+  [arm64] ok (518 KB, 9.1s)
+
+[5/7] Assemble output folder: build/Meltdown Empire - VST - Melt Flip/
+  copied plugin.json
+  gen_ui.py (ui.json) -> Plugin Skins/
+  copied 1 file from Content/ into Content/
+
+[6/7] version.xml
+  version 1.0.0.0, uiversion 0.1.0.0
+
+[7/7] Validate
+Validating /home/runner/work/melt-deck/melt-deck/plugins/Melt Flip/build/Meltdown Empire - VST - Melt Flip
+OK     plugin.json: Melt Flip by Meltdown Empire (instrument, uid MJ2Y)
+OK     folder name "Meltdown Empire - VST - Melt Flip"
+OK     file32: melt-flip-arm32.so is a 32-bit ARM shared object
+OK     file32: needed libraries: libm.so.6, libc.so.6, ld-linux-armhf.so.3, libpthread.so.0, libdl.so.2
+OK     file32: max GLIBC requirement 2.27
+OK     file32: exports VSTPluginMain
+OK     file64: melt-flip-arm64.so is a 64-bit AArch64 shared object
+OK     file64: needed libraries: libm.so.6, libc.so.6, libpthread.so.0, libdl.so.2
+OK     file64: max GLIBC requirement 2.27
+OK     file64: exports VSTPluginMain
+OK     uid matches the binary (MJ2Y)
+OK     name matches the binary (Melt Flip)
+OK     manufacturer matches the binary (Meltdown Empire)
+OK     kind matches the binary (instrument)
+OK     numInputs matches the binary (0)
+OK     numOutputs matches the binary (2)
+OK     TUI.json: all parameter handles are within 0..18
+OK     TUI.json: image fader_h_uni.png present
+OK     TUI.json: image knob_bi.png present
+OK     TUI.json: image knob_uni.png present
+OK     TUI.json: image seg2_off.png present
+OK     TUI.json: image seg2_on.png present
+OK     TUI.json: image seg3_off.png present
+OK     TUI.json: image seg3_on.png present
+OK     TUI.json: image seg4_off.png present
+OK     TUI.json: image seg4_on.png present
+OK     TUI.json: image toggle_off.png present
+OK     TUI.json: image toggle_on.png present
+OK     TUI.json: 2 tabs
+OK     Q-Links.json: 2 tab maps, all values in range
+OK     version.xml uiversion 0.1.0.0
+OK     Content/: 1 file, 0.6 MB (loaded by the plugin at run time, see framework/mpc_resources.h)
+0 errors, 0 warnings
+
+========================================================================
+Build finished: Meltdown Empire - VST - Melt Flip
+  Output folder: /home/runner/work/melt-deck/melt-deck/plugins/Melt Flip/build/Meltdown Empire - VST - Melt Flip
+    plugin.json                              586 B
+    version.xml                              152 B
+    Content/Songs/Meltdown Demo 92bpm Amin.mp3 584 KB
+    Plugin Skins/Q-Links.json                2 KB
+    Plugin Skins/TUI.json                    132 KB
+    Plugin Skins/fader_h_uni.png             98 KB
+    Plugin Skins/knob_bi.png                 80 KB
+    Plugin Skins/knob_uni.png                79 KB
+    Plugin Skins/seg2_off.png                586 B
+    Plugin Skins/seg2_on.png                 597 B
+    Plugin Skins/seg3_off.png                573 B
+    Plugin Skins/seg3_on.png                 586 B
+    Plugin Skins/seg4_off.png                544 B
+    Plugin Skins/seg4_on.png                 549 B
+    Plugin Skins/toggle_off.png              1 KB
+    Plugin Skins/toggle_on.png               1 KB
+    VST/melt-flip-arm32.so                   414 KB
+    VST/melt-flip-arm64.so                   518 KB
+  Native test build: /home/runner/work/melt-deck/melt-deck/plugins/Melt Flip/build/native/melt-flip.so
+
+Next:
+  * Make a zip for sharing:   python tools/package.py "plugins/Melt Flip"
+  * Or copy the output folder into a folder named "VST2 Plugins" on your MPC's drive (see INSTALL.txt in the zip).

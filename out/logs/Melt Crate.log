@@ -1,0 +1,91 @@
+Building Melt Crate by Meltdown Empire  (/home/runner/work/melt-deck/melt-deck/plugins/Melt Crate)
+  toolchain: zig   target: all   release
+Using zig 0.17.1 (from --zig)
+
+[1/7] Native build (for host_sim and testing on this computer)
+  [native] compiling 1 source file -> build/native/melt-crate.so
+  [native] ok (3.9 MB, 3.9s)
+
+[2/7] Parameter dump (host_sim) -> build/params.json
+  host_sim dump -> build/params.json
+
+[3/7] arm32 build (MPC Live/X/One (32-bit))
+  [arm32] compiling 1 source file -> build/Meltdown Empire - VST - Melt Crate/VST/melt-crate-arm32.so
+  [arm32] ok (287 KB, 3.0s)
+
+[4/7] arm64 build (MPC Live II/One+/Key 61/X SE/3 (64-bit))
+  [arm64] compiling 1 source file -> build/Meltdown Empire - VST - Melt Crate/VST/melt-crate-arm64.so
+  [arm64] ok (341 KB, 3.4s)
+
+[5/7] Assemble output folder: build/Meltdown Empire - VST - Melt Crate/
+  copied plugin.json
+  gen_ui.py (ui.json) -> Plugin Skins/
+  copied 7 files from Content/ into Content/
+
+[6/7] version.xml
+  version 1.0.0.0, uiversion 0.1.0.0
+
+[7/7] Validate
+Validating /home/runner/work/melt-deck/melt-deck/plugins/Melt Crate/build/Meltdown Empire - VST - Melt Crate
+OK     plugin.json: Melt Crate by Meltdown Empire (instrument, uid MLQx)
+OK     folder name "Meltdown Empire - VST - Melt Crate"
+OK     file32: melt-crate-arm32.so is a 32-bit ARM shared object
+OK     file32: needed libraries: libm.so.6, libc.so.6, ld-linux-armhf.so.3, libpthread.so.0, libdl.so.2
+OK     file32: max GLIBC requirement 2.27
+OK     file32: exports VSTPluginMain
+OK     file64: melt-crate-arm64.so is a 64-bit AArch64 shared object
+OK     file64: needed libraries: libm.so.6, libc.so.6, libpthread.so.0, libdl.so.2
+OK     file64: max GLIBC requirement 2.29
+OK     file64: exports VSTPluginMain
+OK     uid matches the binary (MLQx)
+OK     name matches the binary (Melt Crate)
+OK     manufacturer matches the binary (Meltdown Empire)
+OK     kind matches the binary (instrument)
+OK     numInputs matches the binary (0)
+OK     numOutputs matches the binary (2)
+OK     TUI.json: all parameter handles are within 0..47
+OK     TUI.json: image fader_h_uni.png present
+OK     TUI.json: image knob_bi.png present
+OK     TUI.json: image knob_uni.png present
+OK     TUI.json: image seg2_off.png present
+OK     TUI.json: image seg2_on.png present
+OK     TUI.json: image seg4_off.png present
+OK     TUI.json: image seg4_on.png present
+OK     TUI.json: image toggle_off.png present
+OK     TUI.json: image toggle_on.png present
+OK     TUI.json: 4 tabs
+OK     Q-Links.json: 4 tab maps, all values in range
+OK     version.xml uiversion 0.1.0.0
+OK     Content/: 7 files, 4.4 MB (loaded by the plugin at run time, see framework/mpc_resources.h)
+0 errors, 0 warnings
+
+========================================================================
+Build finished: Meltdown Empire - VST - Melt Crate
+  Output folder: /home/runner/work/melt-deck/melt-deck/plugins/Melt Crate/build/Meltdown Empire - VST - Melt Crate
+    plugin.json                              600 B
+    version.xml                              152 B
+    Content/Samples/Melt Break 90.wav        919 KB
+    Content/Samples/Melt Pad Loop C3.wav     1.0 MB
+    Content/Samples/Tine Keys/Tine C1.wav    517 KB
+    Content/Samples/Tine Keys/Tine C2.wav    517 KB
+    Content/Samples/Tine Keys/Tine C3.wav    517 KB
+    Content/Samples/Tine Keys/Tine C4.wav    517 KB
+    Content/Samples/Tine Keys/Tine C5.wav    517 KB
+    Plugin Skins/Q-Links.json                4 KB
+    Plugin Skins/TUI.json                    153 KB
+    Plugin Skins/fader_h_uni.png             98 KB
+    Plugin Skins/knob_bi.png                 80 KB
+    Plugin Skins/knob_uni.png                79 KB
+    Plugin Skins/seg2_off.png                586 B
+    Plugin Skins/seg2_on.png                 597 B
+    Plugin Skins/seg4_off.png                544 B
+    Plugin Skins/seg4_on.png                 549 B
+    Plugin Skins/toggle_off.png              1 KB
+    Plugin Skins/toggle_on.png               1 KB
+    VST/melt-crate-arm32.so                  287 KB
+    VST/melt-crate-arm64.so                  341 KB
+  Native test build: /home/runner/work/melt-deck/melt-deck/plugins/Melt Crate/build/native/melt-crate.so
+
+Next:
+  * Make a zip for sharing:   python tools/package.py "plugins/Melt Crate"
+  * Or copy the output folder into a folder named "VST2 Plugins" on your MPC's drive (see INSTALL.txt in the zip).

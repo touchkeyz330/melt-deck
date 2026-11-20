@@ -1,0 +1,39 @@
+Building Vault by Meltdown Empire  (/home/runner/work/melt-deck/melt-deck/plugins/Vault)
+  toolchain: zig   target: all   release
+Using zig 0.17.1 (from --zig)
+
+[1/7] Native build (for host_sim and testing on this computer)
+  [native] compiling 1 source file -> build/native/vault.so
+  [native] ok (6.3 MB, 3.3s)
+
+[2/7] Parameter dump (host_sim) -> build/params.json
+  host_sim dump -> build/params.json
+
+[3/7] arm32 build (MPC Live/X/One (32-bit))
+  [arm32] compiling 1 source file -> build/Meltdown Empire - VST - Vault/VST/vault-arm32.so
+  [arm32] ok (447 KB, 2.6s)
+
+[4/7] arm64 build (MPC Live II/One+/Key 61/X SE/3 (64-bit))
+  [arm64] compiling 1 source file -> build/Meltdown Empire - VST - Vault/VST/vault-arm64.so
+  [arm64] ok (526 KB, 2.8s)
+
+[5/7] Assemble output folder: build/Meltdown Empire - VST - Vault/
+  copied plugin.json
+  gen_ui.py (ui.json) -> Plugin Skins/
+Traceback (most recent call last):
+  File "/home/runner/work/melt-deck/melt-deck/tools/build.py", line 930, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/home/runner/work/melt-deck/melt-deck/tools/build.py", line 871, in main
+    n_content = copy_content(project, out_dir)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/melt-deck/melt-deck/tools/build.py", line 669, in copy_content
+    copy_tree_verbatim(src, dst)
+  File "/home/runner/work/melt-deck/melt-deck/tools/build.py", line 645, in copy_tree_verbatim
+    shutil.copytree(src, dst, ignore=shutil.ignore_patterns(".DS_Store", "Thumbs.db"))
+  File "/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/shutil.py", line 600, in copytree
+    return _copytree(entries=entries, src=src, dst=dst, symlinks=symlinks,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/shutil.py", line 554, in _copytree
+    raise Error(errors)
+shutil.Error: [('/home/runner/work/melt-deck/melt-deck/plugins/Vault/Content/Banks', '/home/runner/work/melt-deck/melt-deck/plugins/Vault/build/Meltdown Empire - VST - Vault/Content/Banks', "[Errno 2] No such file or directory: '/home/runner/work/melt-deck/melt-deck/plugins/Vault/Content/Banks'")]
