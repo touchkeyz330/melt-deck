@@ -4,36 +4,82 @@ Using zig 0.17.1 (from --zig)
 
 [1/7] Native build (for host_sim and testing on this computer)
   [native] compiling 1 source file -> build/native/vault.so
-  [native] ok (6.3 MB, 3.3s)
+  [native] ok (6.3 MB, 2.1s)
 
 [2/7] Parameter dump (host_sim) -> build/params.json
   host_sim dump -> build/params.json
 
 [3/7] arm32 build (MPC Live/X/One (32-bit))
   [arm32] compiling 1 source file -> build/Meltdown Empire - VST - Vault/VST/vault-arm32.so
-  [arm32] ok (447 KB, 2.6s)
+  [arm32] ok (447 KB, 1.6s)
 
 [4/7] arm64 build (MPC Live II/One+/Key 61/X SE/3 (64-bit))
   [arm64] compiling 1 source file -> build/Meltdown Empire - VST - Vault/VST/vault-arm64.so
-  [arm64] ok (526 KB, 2.8s)
+  [arm64] ok (526 KB, 1.9s)
 
 [5/7] Assemble output folder: build/Meltdown Empire - VST - Vault/
   copied plugin.json
   gen_ui.py (ui.json) -> Plugin Skins/
-Traceback (most recent call last):
-  File "/home/runner/work/melt-deck/melt-deck/tools/build.py", line 930, in <module>
-    sys.exit(main())
-             ^^^^^^
-  File "/home/runner/work/melt-deck/melt-deck/tools/build.py", line 871, in main
-    n_content = copy_content(project, out_dir)
-                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/melt-deck/melt-deck/tools/build.py", line 669, in copy_content
-    copy_tree_verbatim(src, dst)
-  File "/home/runner/work/melt-deck/melt-deck/tools/build.py", line 645, in copy_tree_verbatim
-    shutil.copytree(src, dst, ignore=shutil.ignore_patterns(".DS_Store", "Thumbs.db"))
-  File "/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/shutil.py", line 600, in copytree
-    return _copytree(entries=entries, src=src, dst=dst, symlinks=symlinks,
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/shutil.py", line 554, in _copytree
-    raise Error(errors)
-shutil.Error: [('/home/runner/work/melt-deck/melt-deck/plugins/Vault/Content/Banks', '/home/runner/work/melt-deck/melt-deck/plugins/Vault/build/Meltdown Empire - VST - Vault/Content/Banks', "[Errno 2] No such file or directory: '/home/runner/work/melt-deck/melt-deck/plugins/Vault/Content/Banks'")]
+  copied 1 file from Content/ into Content/
+
+[6/7] version.xml
+  version 1.0.0.0, uiversion 0.1.0.0
+
+[7/7] Validate
+Validating /home/runner/work/melt-deck/melt-deck/plugins/Vault/build/Meltdown Empire - VST - Vault
+OK     plugin.json: Vault by Meltdown Empire (instrument, uid MCb9)
+OK     folder name "Meltdown Empire - VST - Vault"
+OK     file32: vault-arm32.so is a 32-bit ARM shared object
+OK     file32: needed libraries: libm.so.6, libc.so.6, ld-linux-armhf.so.3, libpthread.so.0, libdl.so.2
+OK     file32: max GLIBC requirement 2.27
+OK     file32: exports VSTPluginMain
+OK     file64: vault-arm64.so is a 64-bit AArch64 shared object
+OK     file64: needed libraries: libm.so.6, libc.so.6, libpthread.so.0, libdl.so.2
+OK     file64: max GLIBC requirement 2.27
+OK     file64: exports VSTPluginMain
+OK     uid matches the binary (MCb9)
+OK     name matches the binary (Vault)
+OK     manufacturer matches the binary (Meltdown Empire)
+OK     kind matches the binary (instrument)
+OK     numInputs matches the binary (0)
+OK     numOutputs matches the binary (2)
+OK     TUI.json: all parameter handles are within 0..30
+OK     TUI.json: image fader_h_uni.png present
+OK     TUI.json: image knob_bi.png present
+OK     TUI.json: image knob_uni.png present
+OK     TUI.json: image seg2_off.png present
+OK     TUI.json: image seg2_on.png present
+OK     TUI.json: image seg3_off.png present
+OK     TUI.json: image seg3_on.png present
+OK     TUI.json: image toggle_off.png present
+OK     TUI.json: image toggle_on.png present
+OK     TUI.json: 4 tabs
+OK     Q-Links.json: 4 tab maps, all values in range
+OK     version.xml uiversion 0.1.0.0
+OK     Content/: 1 file, 0.6 MB (loaded by the plugin at run time, see framework/mpc_resources.h)
+0 errors, 0 warnings
+
+========================================================================
+Build finished: Meltdown Empire - VST - Vault
+  Output folder: /home/runner/work/melt-deck/melt-deck/plugins/Vault/build/Meltdown Empire - VST - Vault
+    plugin.json                              490 B
+    version.xml                              152 B
+    Content/vault.map                        614 KB
+    Plugin Skins/Q-Links.json                4 KB
+    Plugin Skins/TUI.json                    127 KB
+    Plugin Skins/fader_h_uni.png             98 KB
+    Plugin Skins/knob_bi.png                 80 KB
+    Plugin Skins/knob_uni.png                79 KB
+    Plugin Skins/seg2_off.png                586 B
+    Plugin Skins/seg2_on.png                 597 B
+    Plugin Skins/seg3_off.png                573 B
+    Plugin Skins/seg3_on.png                 586 B
+    Plugin Skins/toggle_off.png              1 KB
+    Plugin Skins/toggle_on.png               1 KB
+    VST/vault-arm32.so                       447 KB
+    VST/vault-arm64.so                       526 KB
+  Native test build: /home/runner/work/melt-deck/melt-deck/plugins/Vault/build/native/vault.so
+
+Next:
+  * Make a zip for sharing:   python tools/package.py plugins/Vault
+  * Or copy the output folder into a folder named "VST2 Plugins" on your MPC's drive (see INSTALL.txt in the zip).

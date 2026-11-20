@@ -4,18 +4,18 @@ Using zig 0.17.1 (from --zig)
 
 [1/7] Native build (for host_sim and testing on this computer)
   [native] compiling 1 source file -> build/native/melt-stack.so
-  [native] ok (4.2 MB, 3.4s)
+  [native] ok (4.1 MB, 2.2s)
 
 [2/7] Parameter dump (host_sim) -> build/params.json
   host_sim dump -> build/params.json
 
 [3/7] arm32 build (MPC Live/X/One (32-bit))
   [arm32] compiling 1 source file -> build/Meltdown Empire - VST - Melt Stack/VST/melt-stack-arm32.so
-  [arm32] ok (272 KB, 2.6s)
+  [arm32] ok (272 KB, 1.6s)
 
 [4/7] arm64 build (MPC Live II/One+/Key 61/X SE/3 (64-bit))
   [arm64] compiling 1 source file -> build/Meltdown Empire - VST - Melt Stack/VST/melt-stack-arm64.so
-  [arm64] ok (359 KB, 3.1s)
+  [arm64] ok (359 KB, 1.9s)
 
 [5/7] Assemble output folder: build/Meltdown Empire - VST - Melt Stack/
   copied plugin.json

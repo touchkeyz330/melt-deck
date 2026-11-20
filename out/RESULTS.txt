@@ -19,5 +19,5 @@ OK    Melt Sweep
 OK    Melt Venom
 OK    Melt-Tune
 OK    Silk Opto
-FAIL  Vault
+OK    Vault
 OK    Wave Relay

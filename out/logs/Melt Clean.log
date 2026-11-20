@@ -4,18 +4,18 @@ Using zig 0.17.1 (from --zig)
 
 [1/7] Native build (for host_sim and testing on this computer)
   [native] compiling 1 source file -> build/native/melt-clean.so
-  [native] ok (2.5 MB, 1.8s)
+  [native] ok (2.5 MB, 1.1s)
 
 [2/7] Parameter dump (host_sim) -> build/params.json
   host_sim dump -> build/params.json
 
 [3/7] arm32 build (MPC Live/X/One (32-bit))
   [arm32] compiling 1 source file -> build/Meltdown Empire - VST - Melt Clean/VST/melt-clean-arm32.so
-  [arm32] ok (200 KB, 1.5s)
+  [arm32] ok (200 KB, 0.9s)
 
 [4/7] arm64 build (MPC Live II/One+/Key 61/X SE/3 (64-bit))
   [arm64] compiling 1 source file -> build/Meltdown Empire - VST - Melt Clean/VST/melt-clean-arm64.so
-  [arm64] ok (247 KB, 1.6s)
+  [arm64] ok (247 KB, 1.0s)
 
 [5/7] Assemble output folder: build/Meltdown Empire - VST - Melt Clean/
   copied plugin.json

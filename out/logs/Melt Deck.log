@@ -10,7 +10,7 @@ In file included from /home/runner/work/melt-deck/melt-deck/plugins/Melt Deck/sr
   279 |             std::array<double, 12> m{}; int cnt = 0;
       |                                             ^
 1 warning generated.
-  [native] ok (4.9 MB, 10.3s)
+  [native] ok (5.0 MB, 6.7s)
 
 [2/7] Parameter dump (host_sim) -> build/params.json
   host_sim dump -> build/params.json
@@ -23,7 +23,7 @@ In file included from /home/runner/work/melt-deck/melt-deck/plugins/Melt Deck/sr
   279 |             std::array<double, 12> m{}; int cnt = 0;
       |                                             ^
 1 warning generated.
-  [arm32] ok (421 KB, 7.4s)
+  [arm32] ok (421 KB, 4.6s)
 
 [4/7] arm64 build (MPC Live II/One+/Key 61/X SE/3 (64-bit))
   [arm64] compiling 2 source files -> build/Meltdown Empire - VST - Melt Deck/VST/melt-deck-arm64.so
@@ -33,7 +33,7 @@ In file included from /home/runner/work/melt-deck/melt-deck/plugins/Melt Deck/sr
   279 |             std::array<double, 12> m{}; int cnt = 0;
       |                                             ^
 1 warning generated.
-  [arm64] ok (497 KB, 9.1s)
+  [arm64] ok (497 KB, 5.9s)
 
 [5/7] Assemble output folder: build/Meltdown Empire - VST - Melt Deck/
   copied plugin.json

@@ -4,18 +4,18 @@ Using zig 0.17.1 (from --zig)
 
 [1/7] Native build (for host_sim and testing on this computer)
   [native] compiling 1 source file -> build/native/melt-stutter.so
-  [native] ok (2.5 MB, 1.5s)
+  [native] ok (2.5 MB, 1.0s)
 
 [2/7] Parameter dump (host_sim) -> build/params.json
   host_sim dump -> build/params.json
 
 [3/7] arm32 build (MPC Live/X/One (32-bit))
   [arm32] compiling 1 source file -> build/Meltdown Empire - VST - Melt Stutter/VST/melt-stutter-arm32.so
-  [arm32] ok (195 KB, 1.3s)
+  [arm32] ok (195 KB, 0.8s)
 
 [4/7] arm64 build (MPC Live II/One+/Key 61/X SE/3 (64-bit))
   [arm64] compiling 1 source file -> build/Meltdown Empire - VST - Melt Stutter/VST/melt-stutter-arm64.so
-  [arm64] ok (242 KB, 1.4s)
+  [arm64] ok (242 KB, 0.9s)
 
 [5/7] Assemble output folder: build/Meltdown Empire - VST - Melt Stutter/
   copied plugin.json
