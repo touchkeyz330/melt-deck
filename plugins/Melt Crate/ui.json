@@ -1,0 +1,226 @@
+{
+  "pages": [
+    {
+      "name": "SAMPLE",
+      "controls": [
+        {
+          "param": "Sound",
+          "widget": "slider",
+          "overlay": "menu"
+        },
+        {
+          "param": "Loop Mode",
+          "widget": "slider",
+          "overlay": "menu"
+        },
+        {
+          "param": "Trigger",
+          "widget": "switch"
+        },
+        {
+          "param": "Slices",
+          "widget": "slider",
+          "overlay": "menu"
+        },
+        {
+          "param": "Slice Key",
+          "widget": "knob"
+        },
+        {
+          "param": "Start",
+          "widget": "knob"
+        },
+        {
+          "param": "Vel>Start",
+          "widget": "knob"
+        },
+        {
+          "param": "Transpose",
+          "widget": "knob",
+          "polarity": "bipolar"
+        },
+        {
+          "param": "Fine",
+          "widget": "knob",
+          "polarity": "bipolar"
+        },
+        {
+          "param": "Key Track",
+          "widget": "switch"
+        },
+        {
+          "param": "Voice Mode",
+          "widget": "switch"
+        },
+        {
+          "param": "Glide",
+          "widget": "knob"
+        },
+        {
+          "param": "Bend Range",
+          "widget": "knob"
+        },
+        {
+          "param": "Volume",
+          "widget": "fader"
+        },
+        {
+          "param": "Pan",
+          "widget": "knob",
+          "polarity": "bipolar"
+        }
+      ]
+    },
+    {
+      "name": "FILTER",
+      "controls": [
+        {
+          "param": "Filter",
+          "widget": "slider",
+          "overlay": "menu"
+        },
+        {
+          "param": "Cutoff",
+          "widget": "knob"
+        },
+        {
+          "param": "Reso",
+          "widget": "knob"
+        },
+        {
+          "param": "Filt Env",
+          "widget": "knob",
+          "polarity": "bipolar"
+        },
+        {
+          "param": "Key Follow",
+          "widget": "knob"
+        },
+        {
+          "param": "Vel>Filter",
+          "widget": "knob"
+        },
+        {
+          "param": "F Attack",
+          "widget": "knob"
+        },
+        {
+          "param": "F Decay",
+          "widget": "knob"
+        },
+        {
+          "param": "F Sustain",
+          "widget": "knob"
+        },
+        {
+          "param": "F Release",
+          "widget": "knob"
+        }
+      ]
+    },
+    {
+      "name": "AMP/MOD",
+      "controls": [
+        {
+          "param": "Attack",
+          "widget": "knob"
+        },
+        {
+          "param": "Decay",
+          "widget": "knob"
+        },
+        {
+          "param": "Sustain",
+          "widget": "knob"
+        },
+        {
+          "param": "Release",
+          "widget": "knob"
+        },
+        {
+          "param": "Vel>Amp",
+          "widget": "knob"
+        },
+        {
+          "param": "Pitch Env",
+          "widget": "knob",
+          "polarity": "bipolar"
+        },
+        {
+          "param": "P Env Decay",
+          "widget": "knob"
+        },
+        {
+          "param": "LFO Rate",
+          "widget": "knob"
+        },
+        {
+          "param": "LFO Wave",
+          "widget": "slider",
+          "overlay": "menu"
+        },
+        {
+          "param": "LFO Delay",
+          "widget": "knob"
+        },
+        {
+          "param": "LFO>Pitch",
+          "widget": "knob"
+        },
+        {
+          "param": "LFO>Filter",
+          "widget": "knob"
+        },
+        {
+          "param": "LFO>Amp",
+          "widget": "knob"
+        }
+      ]
+    },
+    {
+      "name": "COLOR/FX",
+      "controls": [
+        {
+          "param": "Character",
+          "widget": "switch"
+        },
+        {
+          "param": "Bits",
+          "widget": "knob"
+        },
+        {
+          "param": "Drive",
+          "widget": "knob"
+        },
+        {
+          "param": "Chorus",
+          "widget": "knob"
+        },
+        {
+          "param": "Chorus Rate",
+          "widget": "knob"
+        },
+        {
+          "param": "Delay Time",
+          "widget": "knob"
+        },
+        {
+          "param": "Delay Fdbk",
+          "widget": "knob"
+        },
+        {
+          "param": "Delay Mix",
+          "widget": "knob"
+        },
+        {
+          "param": "Reverb Time",
+          "widget": "knob"
+        },
+        {
+          "param": "Reverb",
+          "widget": "knob"
+        }
+      ]
+    }
+  ]
+}

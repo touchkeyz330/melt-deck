@@ -1,0 +1,16 @@
+{
+  "pages": [
+    { "name": "TUNE",
+      "controls": [
+        { "param": "Key",       "widget": "slider", "overlay": "menu" },
+        { "param": "Scale",     "widget": "slider", "overlay": "menu" },
+        { "param": "Retune",    "widget": "knob" },
+        { "param": "Amount",    "widget": "knob" },
+        { "param": "Pitch",     "widget": "slider" },
+        { "param": "Transpose", "widget": "knob", "polarity": "bipolar" },
+        { "param": "Voice",     "widget": "switch" },
+        { "param": "Mix",       "widget": "knob" },
+        { "param": "Output",    "widget": "knob", "polarity": "bipolar" }
+      ] }
+  ]
+}

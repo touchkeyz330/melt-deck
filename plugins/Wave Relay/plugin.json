@@ -1,0 +1,17 @@
+{
+  "name": "Wave Relay",
+  "manufacturer": "Meltdown Empire",
+  "version": "1.0.0",
+  "format": "vst2",
+  "kind": "instrument",
+  "uid": "MHwX",
+  "numInputs": 0,
+  "numOutputs": 2,
+  "category": "Synth",
+  "file32": "VST/wave-relay-arm32.so",
+  "file64": "VST/wave-relay-arm64.so",
+  "description": "Wave Relay: wave-sequencing synth. 8-step chains of single-cycle waves with crossfades, tempo sync, drone layer with vector sweep, filter, envelopes and stereo chorus.",
+  "author": "Meltdown Empire",
+  "url": "",
+  "license": "MIT"
+}

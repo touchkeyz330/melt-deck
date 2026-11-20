@@ -1,0 +1,17 @@
+{
+  "name": "Melt Sweep",
+  "manufacturer": "Meltdown Empire",
+  "version": "1.0.0",
+  "format": "vst2",
+  "kind": "effect",
+  "uid": "Mlma",
+  "numInputs": 2,
+  "numOutputs": 2,
+  "category": "Filter",
+  "file32": "VST/melt-sweep-arm32.so",
+  "file64": "VST/melt-sweep-arm64.so",
+  "description": "Melt Sweep: a one-knob DJ filter. Centre is off, left is low-pass, right is high-pass, with resonance that rises as you turn. Smooth, click-free sweeps.",
+  "author": "Meltdown Empire",
+  "url": "",
+  "license": "MIT"
+}

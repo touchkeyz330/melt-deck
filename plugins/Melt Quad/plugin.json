@@ -1,0 +1,17 @@
+{
+  "name": "Melt Quad",
+  "manufacturer": "Meltdown Empire",
+  "version": "1.0.0",
+  "format": "vst2",
+  "kind": "instrument",
+  "uid": "MYmI",
+  "numInputs": 0,
+  "numOutputs": 2,
+  "category": "Synth",
+  "file32": "VST/melt-quad-arm32.so",
+  "file64": "VST/melt-quad-arm64.so",
+  "description": "Melt Quad: a four-part performance instrument. Layer, split or multi-channel four synth parts (26 original sounds) with per-part filter, envelope, EQ and comp, plus ping-pong delay and room reverb.",
+  "author": "Meltdown Empire",
+  "url": "",
+  "license": "MIT"
+}

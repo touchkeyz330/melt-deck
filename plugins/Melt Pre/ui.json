@@ -1,0 +1,45 @@
+{
+  "pages": [
+    {
+      "name": "PRE",
+      "controls": [
+        {
+          "param": "Gain",
+          "widget": "slider",
+          "overlay": "menu"
+        },
+        {
+          "param": "Fine",
+          "widget": "knob",
+          "polarity": "bipolar"
+        },
+        {
+          "param": "Impedance",
+          "widget": "switch"
+        },
+        {
+          "param": "High Pass",
+          "widget": "slider",
+          "overlay": "menu"
+        },
+        {
+          "param": "Phase",
+          "widget": "switch"
+        },
+        {
+          "param": "Output",
+          "widget": "knob",
+          "polarity": "bipolar"
+        },
+        {
+          "param": "Auto Trim",
+          "widget": "switch"
+        },
+        {
+          "param": "Mix",
+          "widget": "knob"
+        }
+      ]
+    }
+  ]
+}

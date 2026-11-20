@@ -1,0 +1,687 @@
+{
+  "pages": [
+    {
+      "name": "PATCH",
+      "controls": [
+        {
+          "param": "Volume",
+          "widget": "fader"
+        },
+        {
+          "param": "Key Mode",
+          "widget": "switch"
+        },
+        {
+          "param": "Portamento",
+          "widget": "knob"
+        },
+        {
+          "param": "Bend Range",
+          "widget": "knob"
+        },
+        {
+          "param": "Wheel Vib",
+          "widget": "knob"
+        },
+        {
+          "param": "Struct 1-2",
+          "widget": "switch"
+        },
+        {
+          "param": "Struct 3-4",
+          "widget": "switch"
+        },
+        {
+          "param": "T1 On",
+          "widget": "switch"
+        },
+        {
+          "param": "T2 On",
+          "widget": "switch"
+        },
+        {
+          "param": "T3 On",
+          "widget": "switch"
+        },
+        {
+          "param": "T4 On",
+          "widget": "switch"
+        },
+        {
+          "param": "T1 Level",
+          "widget": "knob"
+        },
+        {
+          "param": "T2 Level",
+          "widget": "knob"
+        },
+        {
+          "param": "T3 Level",
+          "widget": "knob"
+        },
+        {
+          "param": "T4 Level",
+          "widget": "knob"
+        }
+      ]
+    },
+    {
+      "name": "TONE 1",
+      "controls": [
+        {
+          "param": "T1 On",
+          "widget": "switch"
+        },
+        {
+          "param": "T1 Wave",
+          "widget": "slider",
+          "overlay": "menu"
+        },
+        {
+          "param": "T1 Level",
+          "widget": "knob"
+        },
+        {
+          "param": "T1 Pan",
+          "widget": "knob",
+          "polarity": "bipolar"
+        },
+        {
+          "param": "T1 Coarse",
+          "widget": "knob",
+          "polarity": "bipolar"
+        },
+        {
+          "param": "T1 Fine",
+          "widget": "knob",
+          "polarity": "bipolar"
+        },
+        {
+          "param": "T1 Key Lo",
+          "widget": "knob"
+        },
+        {
+          "param": "T1 Key Hi",
+          "widget": "knob"
+        },
+        {
+          "param": "T1 Velocity",
+          "widget": "knob"
+        },
+        {
+          "param": "T1 P Env",
+          "widget": "knob",
+          "polarity": "bipolar"
+        },
+        {
+          "param": "T1 P Env Time",
+          "widget": "knob"
+        },
+        {
+          "param": "T1 Filter",
+          "widget": "slider",
+          "overlay": "menu"
+        },
+        {
+          "param": "T1 Cutoff",
+          "widget": "knob"
+        },
+        {
+          "param": "T1 Reso",
+          "widget": "knob"
+        },
+        {
+          "param": "T1 Key Follow",
+          "widget": "knob",
+          "polarity": "bipolar"
+        },
+        {
+          "param": "T1 F Env",
+          "widget": "knob",
+          "polarity": "bipolar"
+        }
+      ]
+    },
+    {
+      "name": "TONE 2",
+      "controls": [
+        {
+          "param": "T2 On",
+          "widget": "switch"
+        },
+        {
+          "param": "T2 Wave",
+          "widget": "slider",
+          "overlay": "menu"
+        },
+        {
+          "param": "T2 Level",
+          "widget": "knob"
+        },
+        {
+          "param": "T2 Pan",
+          "widget": "knob",
+          "polarity": "bipolar"
+        },
+        {
+          "param": "T2 Coarse",
+          "widget": "knob",
+          "polarity": "bipolar"
+        },
+        {
+          "param": "T2 Fine",
+          "widget": "knob",
+          "polarity": "bipolar"
+        },
+        {
+          "param": "T2 Key Lo",
+          "widget": "knob"
+        },
+        {
+          "param": "T2 Key Hi",
+          "widget": "knob"
+        },
+        {
+          "param": "T2 Velocity",
+          "widget": "knob"
+        },
+        {
+          "param": "T2 P Env",
+          "widget": "knob",
+          "polarity": "bipolar"
+        },
+        {
+          "param": "T2 P Env Time",
+          "widget": "knob"
+        },
+        {
+          "param": "T2 Filter",
+          "widget": "slider",
+          "overlay": "menu"
+        },
+        {
+          "param": "T2 Cutoff",
+          "widget": "knob"
+        },
+        {
+          "param": "T2 Reso",
+          "widget": "knob"
+        },
+        {
+          "param": "T2 Key Follow",
+          "widget": "knob",
+          "polarity": "bipolar"
+        },
+        {
+          "param": "T2 F Env",
+          "widget": "knob",
+          "polarity": "bipolar"
+        }
+      ]
+    },
+    {
+      "name": "TONE 3",
+      "controls": [
+        {
+          "param": "T3 On",
+          "widget": "switch"
+        },
+        {
+          "param": "T3 Wave",
+          "widget": "slider",
+          "overlay": "menu"
+        },
+        {
+          "param": "T3 Level",
+          "widget": "knob"
+        },
+        {
+          "param": "T3 Pan",
+          "widget": "knob",
+          "polarity": "bipolar"
+        },
+        {
+          "param": "T3 Coarse",
+          "widget": "knob",
+          "polarity": "bipolar"
+        },
+        {
+          "param": "T3 Fine",
+          "widget": "knob",
+          "polarity": "bipolar"
+        },
+        {
+          "param": "T3 Key Lo",
+          "widget": "knob"
+        },
+        {
+          "param": "T3 Key Hi",
+          "widget": "knob"
+        },
+        {
+          "param": "T3 Velocity",
+          "widget": "knob"
+        },
+        {
+          "param": "T3 P Env",
+          "widget": "knob",
+          "polarity": "bipolar"
+        },
+        {
+          "param": "T3 P Env Time",
+          "widget": "knob"
+        },
+        {
+          "param": "T3 Filter",
+          "widget": "slider",
+          "overlay": "menu"
+        },
+        {
+          "param": "T3 Cutoff",
+          "widget": "knob"
+        },
+        {
+          "param": "T3 Reso",
+          "widget": "knob"
+        },
+        {
+          "param": "T3 Key Follow",
+          "widget": "knob",
+          "polarity": "bipolar"
+        },
+        {
+          "param": "T3 F Env",
+          "widget": "knob",
+          "polarity": "bipolar"
+        }
+      ]
+    },
+    {
+      "name": "TONE 4",
+      "controls": [
+        {
+          "param": "T4 On",
+          "widget": "switch"
+        },
+        {
+          "param": "T4 Wave",
+          "widget": "slider",
+          "overlay": "menu"
+        },
+        {
+          "param": "T4 Level",
+          "widget": "knob"
+        },
+        {
+          "param": "T4 Pan",
+          "widget": "knob",
+          "polarity": "bipolar"
+        },
+        {
+          "param": "T4 Coarse",
+          "widget": "knob",
+          "polarity": "bipolar"
+        },
+        {
+          "param": "T4 Fine",
+          "widget": "knob",
+          "polarity": "bipolar"
+        },
+        {
+          "param": "T4 Key Lo",
+          "widget": "knob"
+        },
+        {
+          "param": "T4 Key Hi",
+          "widget": "knob"
+        },
+        {
+          "param": "T4 Velocity",
+          "widget": "knob"
+        },
+        {
+          "param": "T4 P Env",
+          "widget": "knob",
+          "polarity": "bipolar"
+        },
+        {
+          "param": "T4 P Env Time",
+          "widget": "knob"
+        },
+        {
+          "param": "T4 Filter",
+          "widget": "slider",
+          "overlay": "menu"
+        },
+        {
+          "param": "T4 Cutoff",
+          "widget": "knob"
+        },
+        {
+          "param": "T4 Reso",
+          "widget": "knob"
+        },
+        {
+          "param": "T4 Key Follow",
+          "widget": "knob",
+          "polarity": "bipolar"
+        },
+        {
+          "param": "T4 F Env",
+          "widget": "knob",
+          "polarity": "bipolar"
+        }
+      ]
+    },
+    {
+      "name": "FX",
+      "controls": [
+        {
+          "param": "EFX Type",
+          "widget": "slider",
+          "overlay": "menu"
+        },
+        {
+          "param": "EFX Amount",
+          "widget": "knob"
+        },
+        {
+          "param": "EFX Rate",
+          "widget": "knob"
+        },
+        {
+          "param": "EFX Mix",
+          "widget": "knob"
+        },
+        {
+          "param": "Chorus Rate",
+          "widget": "knob"
+        },
+        {
+          "param": "Chorus Depth",
+          "widget": "knob"
+        },
+        {
+          "param": "Chorus Level",
+          "widget": "knob"
+        },
+        {
+          "param": "Reverb Time",
+          "widget": "knob"
+        },
+        {
+          "param": "Reverb Level",
+          "widget": "knob"
+        },
+        {
+          "param": "Reverb Damp",
+          "widget": "knob"
+        }
+      ]
+    },
+    {
+      "name": "T1 ENV",
+      "controls": [
+        {
+          "param": "T1 F Attack",
+          "widget": "knob"
+        },
+        {
+          "param": "T1 F Decay",
+          "widget": "knob"
+        },
+        {
+          "param": "T1 F Sustain",
+          "widget": "knob"
+        },
+        {
+          "param": "T1 F Release",
+          "widget": "knob"
+        },
+        {
+          "param": "T1 Attack",
+          "widget": "knob"
+        },
+        {
+          "param": "T1 Decay",
+          "widget": "knob"
+        },
+        {
+          "param": "T1 Sustain",
+          "widget": "knob"
+        },
+        {
+          "param": "T1 Release",
+          "widget": "knob"
+        },
+        {
+          "param": "T1 LFO Rate",
+          "widget": "knob"
+        },
+        {
+          "param": "T1 LFO Shape",
+          "widget": "slider",
+          "overlay": "menu"
+        },
+        {
+          "param": "T1 LFO Fade",
+          "widget": "knob"
+        },
+        {
+          "param": "T1 LFO>Pitch",
+          "widget": "knob"
+        },
+        {
+          "param": "T1 LFO>Filter",
+          "widget": "knob"
+        },
+        {
+          "param": "T1 LFO>Amp",
+          "widget": "knob"
+        },
+        {
+          "param": "T1 LFO>Pan",
+          "widget": "knob"
+        }
+      ]
+    },
+    {
+      "name": "T2 ENV",
+      "controls": [
+        {
+          "param": "T2 F Attack",
+          "widget": "knob"
+        },
+        {
+          "param": "T2 F Decay",
+          "widget": "knob"
+        },
+        {
+          "param": "T2 F Sustain",
+          "widget": "knob"
+        },
+        {
+          "param": "T2 F Release",
+          "widget": "knob"
+        },
+        {
+          "param": "T2 Attack",
+          "widget": "knob"
+        },
+        {
+          "param": "T2 Decay",
+          "widget": "knob"
+        },
+        {
+          "param": "T2 Sustain",
+          "widget": "knob"
+        },
+        {
+          "param": "T2 Release",
+          "widget": "knob"
+        },
+        {
+          "param": "T2 LFO Rate",
+          "widget": "knob"
+        },
+        {
+          "param": "T2 LFO Shape",
+          "widget": "slider",
+          "overlay": "menu"
+        },
+        {
+          "param": "T2 LFO Fade",
+          "widget": "knob"
+        },
+        {
+          "param": "T2 LFO>Pitch",
+          "widget": "knob"
+        },
+        {
+          "param": "T2 LFO>Filter",
+          "widget": "knob"
+        },
+        {
+          "param": "T2 LFO>Amp",
+          "widget": "knob"
+        },
+        {
+          "param": "T2 LFO>Pan",
+          "widget": "knob"
+        }
+      ]
+    },
+    {
+      "name": "T3 ENV",
+      "controls": [
+        {
+          "param": "T3 F Attack",
+          "widget": "knob"
+        },
+        {
+          "param": "T3 F Decay",
+          "widget": "knob"
+        },
+        {
+          "param": "T3 F Sustain",
+          "widget": "knob"
+        },
+        {
+          "param": "T3 F Release",
+          "widget": "knob"
+        },
+        {
+          "param": "T3 Attack",
+          "widget": "knob"
+        },
+        {
+          "param": "T3 Decay",
+          "widget": "knob"
+        },
+        {
+          "param": "T3 Sustain",
+          "widget": "knob"
+        },
+        {
+          "param": "T3 Release",
+          "widget": "knob"
+        },
+        {
+          "param": "T3 LFO Rate",
+          "widget": "knob"
+        },
+        {
+          "param": "T3 LFO Shape",
+          "widget": "slider",
+          "overlay": "menu"
+        },
+        {
+          "param": "T3 LFO Fade",
+          "widget": "knob"
+        },
+        {
+          "param": "T3 LFO>Pitch",
+          "widget": "knob"
+        },
+        {
+          "param": "T3 LFO>Filter",
+          "widget": "knob"
+        },
+        {
+          "param": "T3 LFO>Amp",
+          "widget": "knob"
+        },
+        {
+          "param": "T3 LFO>Pan",
+          "widget": "knob"
+        }
+      ]
+    },
+    {
+      "name": "T4 ENV",
+      "controls": [
+        {
+          "param": "T4 F Attack",
+          "widget": "knob"
+        },
+        {
+          "param": "T4 F Decay",
+          "widget": "knob"
+        },
+        {
+          "param": "T4 F Sustain",
+          "widget": "knob"
+        },
+        {
+          "param": "T4 F Release",
+          "widget": "knob"
+        },
+        {
+          "param": "T4 Attack",
+          "widget": "knob"
+        },
+        {
+          "param": "T4 Decay",
+          "widget": "knob"
+        },
+        {
+          "param": "T4 Sustain",
+          "widget": "knob"
+        },
+        {
+          "param": "T4 Release",
+          "widget": "knob"
+        },
+        {
+          "param": "T4 LFO Rate",
+          "widget": "knob"
+        },
+        {
+          "param": "T4 LFO Shape",
+          "widget": "slider",
+          "overlay": "menu"
+        },
+        {
+          "param": "T4 LFO Fade",
+          "widget": "knob"
+        },
+        {
+          "param": "T4 LFO>Pitch",
+          "widget": "knob"
+        },
+        {
+          "param": "T4 LFO>Filter",
+          "widget": "knob"
+        },
+        {
+          "param": "T4 LFO>Amp",
+          "widget": "knob"
+        },
+        {
+          "param": "T4 LFO>Pan",
+          "widget": "knob"
+        }
+      ]
+    }
+  ]
+}

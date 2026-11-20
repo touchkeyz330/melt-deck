@@ -1,0 +1,450 @@
+{
+  "pages": [
+    {
+      "name": "OSC",
+      "controls": [
+        {
+          "param": "Osc1 Type",
+          "widget": "switch"
+        },
+        {
+          "param": "Osc1 Shape",
+          "widget": "knob"
+        },
+        {
+          "param": "Osc1 Semi",
+          "widget": "knob",
+          "polarity": "bipolar"
+        },
+        {
+          "param": "Osc1 Level",
+          "widget": "knob"
+        },
+        {
+          "param": "Osc2 Type",
+          "widget": "switch"
+        },
+        {
+          "param": "Osc2 Shape",
+          "widget": "knob"
+        },
+        {
+          "param": "Osc2 Semi",
+          "widget": "knob",
+          "polarity": "bipolar"
+        },
+        {
+          "param": "Osc2 Level",
+          "widget": "knob"
+        },
+        {
+          "param": "Osc3 Type",
+          "widget": "switch"
+        },
+        {
+          "param": "Osc3 Shape",
+          "widget": "knob"
+        },
+        {
+          "param": "Osc3 Semi",
+          "widget": "knob",
+          "polarity": "bipolar"
+        },
+        {
+          "param": "Osc3 Level",
+          "widget": "knob"
+        },
+        {
+          "param": "Osc4 Type",
+          "widget": "switch"
+        },
+        {
+          "param": "Osc4 Shape",
+          "widget": "knob"
+        },
+        {
+          "param": "Osc4 Semi",
+          "widget": "knob",
+          "polarity": "bipolar"
+        },
+        {
+          "param": "Osc4 Level",
+          "widget": "knob"
+        }
+      ]
+    },
+    {
+      "name": "MIX/FX",
+      "controls": [
+        {
+          "param": "Noise",
+          "widget": "knob"
+        },
+        {
+          "param": "Ring 1x2",
+          "widget": "knob"
+        },
+        {
+          "param": "Sync 2>1",
+          "widget": "switch"
+        },
+        {
+          "param": "X-Mod",
+          "widget": "knob"
+        },
+        {
+          "param": "Key Mode",
+          "widget": "slider",
+          "overlay": "menu"
+        },
+        {
+          "param": "Glide",
+          "widget": "knob"
+        },
+        {
+          "param": "Voices",
+          "widget": "knob"
+        },
+        {
+          "param": "Spread",
+          "widget": "knob"
+        },
+        {
+          "param": "Volume",
+          "widget": "fader"
+        },
+        {
+          "param": "Chorus",
+          "widget": "knob"
+        },
+        {
+          "param": "Delay",
+          "widget": "knob"
+        },
+        {
+          "param": "Delay Time",
+          "widget": "slider",
+          "overlay": "menu"
+        },
+        {
+          "param": "Reverb",
+          "widget": "knob"
+        },
+        {
+          "param": "LFO Rate",
+          "widget": "knob"
+        },
+        {
+          "param": "LFO Dest",
+          "widget": "slider",
+          "overlay": "menu"
+        },
+        {
+          "param": "LFO Amount",
+          "widget": "knob"
+        }
+      ]
+    },
+    {
+      "name": "FILT/ENV",
+      "controls": [
+        {
+          "param": "Filter 1",
+          "widget": "slider",
+          "overlay": "menu"
+        },
+        {
+          "param": "Cutoff",
+          "widget": "knob"
+        },
+        {
+          "param": "Resonance",
+          "widget": "knob"
+        },
+        {
+          "param": "Filter 2",
+          "widget": "switch"
+        },
+        {
+          "param": "F2 Offset",
+          "widget": "knob",
+          "polarity": "bipolar"
+        },
+        {
+          "param": "Env Amount",
+          "widget": "knob",
+          "polarity": "bipolar"
+        },
+        {
+          "param": "Key Track",
+          "widget": "knob"
+        },
+        {
+          "param": "F Attack",
+          "widget": "knob"
+        },
+        {
+          "param": "F Decay",
+          "widget": "knob"
+        },
+        {
+          "param": "F Sustain",
+          "widget": "knob"
+        },
+        {
+          "param": "F Release",
+          "widget": "knob"
+        },
+        {
+          "param": "Attack",
+          "widget": "knob"
+        },
+        {
+          "param": "Decay",
+          "widget": "knob"
+        },
+        {
+          "param": "Sustain",
+          "widget": "knob"
+        },
+        {
+          "param": "Release",
+          "widget": "knob"
+        }
+      ]
+    },
+    {
+      "name": "LAYERS",
+      "controls": [
+        {
+          "param": "Layer Mode",
+          "widget": "switch"
+        },
+        {
+          "param": "Layer Pan",
+          "widget": "knob"
+        },
+        {
+          "param": "LayerA Semi",
+          "widget": "knob",
+          "polarity": "bipolar"
+        },
+        {
+          "param": "LayerA Tone",
+          "widget": "knob",
+          "polarity": "bipolar"
+        },
+        {
+          "param": "LayerA Level",
+          "widget": "knob"
+        },
+        {
+          "param": "LayerB Semi",
+          "widget": "knob",
+          "polarity": "bipolar"
+        },
+        {
+          "param": "LayerB Tone",
+          "widget": "knob",
+          "polarity": "bipolar"
+        },
+        {
+          "param": "LayerB Level",
+          "widget": "knob"
+        },
+        {
+          "param": "LayerC Semi",
+          "widget": "knob",
+          "polarity": "bipolar"
+        },
+        {
+          "param": "LayerC Tone",
+          "widget": "knob",
+          "polarity": "bipolar"
+        },
+        {
+          "param": "LayerC Level",
+          "widget": "knob"
+        },
+        {
+          "param": "LayerD Semi",
+          "widget": "knob",
+          "polarity": "bipolar"
+        },
+        {
+          "param": "LayerD Tone",
+          "widget": "knob",
+          "polarity": "bipolar"
+        },
+        {
+          "param": "LayerD Level",
+          "widget": "knob"
+        }
+      ]
+    },
+    {
+      "name": "STEPS",
+      "controls": [
+        {
+          "param": "Pitch 1",
+          "widget": "knob",
+          "polarity": "bipolar"
+        },
+        {
+          "param": "Pitch 2",
+          "widget": "knob",
+          "polarity": "bipolar"
+        },
+        {
+          "param": "Pitch 3",
+          "widget": "knob",
+          "polarity": "bipolar"
+        },
+        {
+          "param": "Pitch 4",
+          "widget": "knob",
+          "polarity": "bipolar"
+        },
+        {
+          "param": "Pitch 5",
+          "widget": "knob",
+          "polarity": "bipolar"
+        },
+        {
+          "param": "Pitch 6",
+          "widget": "knob",
+          "polarity": "bipolar"
+        },
+        {
+          "param": "Pitch 7",
+          "widget": "knob",
+          "polarity": "bipolar"
+        },
+        {
+          "param": "Pitch 8",
+          "widget": "knob",
+          "polarity": "bipolar"
+        },
+        {
+          "param": "Shape 1",
+          "widget": "knob",
+          "polarity": "bipolar"
+        },
+        {
+          "param": "Shape 2",
+          "widget": "knob",
+          "polarity": "bipolar"
+        },
+        {
+          "param": "Shape 3",
+          "widget": "knob",
+          "polarity": "bipolar"
+        },
+        {
+          "param": "Shape 4",
+          "widget": "knob",
+          "polarity": "bipolar"
+        },
+        {
+          "param": "Shape 5",
+          "widget": "knob",
+          "polarity": "bipolar"
+        },
+        {
+          "param": "Shape 6",
+          "widget": "knob",
+          "polarity": "bipolar"
+        },
+        {
+          "param": "Shape 7",
+          "widget": "knob",
+          "polarity": "bipolar"
+        },
+        {
+          "param": "Shape 8",
+          "widget": "knob",
+          "polarity": "bipolar"
+        }
+      ]
+    },
+    {
+      "name": "SEQ/KAOSS",
+      "controls": [
+        {
+          "param": "Motion Seq",
+          "widget": "switch"
+        },
+        {
+          "param": "Seq Rate",
+          "widget": "slider",
+          "overlay": "menu"
+        },
+        {
+          "param": "Seq Steps",
+          "widget": "knob"
+        },
+        {
+          "param": "Seq Smooth",
+          "widget": "knob"
+        },
+        {
+          "param": "Shape Dest",
+          "widget": "slider",
+          "overlay": "menu"
+        },
+        {
+          "param": "Shape Amount",
+          "widget": "knob"
+        },
+        {
+          "param": "Kaoss X",
+          "widget": "knob",
+          "polarity": "bipolar"
+        },
+        {
+          "param": "Kaoss Y",
+          "widget": "knob",
+          "polarity": "bipolar"
+        },
+        {
+          "param": "Gravity",
+          "widget": "knob"
+        },
+        {
+          "param": "Friction",
+          "widget": "knob"
+        },
+        {
+          "param": "Kaoss X Dest",
+          "widget": "slider",
+          "overlay": "menu"
+        },
+        {
+          "param": "Kaoss X Amt",
+          "widget": "knob",
+          "polarity": "bipolar"
+        },
+        {
+          "param": "Kaoss Y Dest",
+          "widget": "slider",
+          "overlay": "menu"
+        },
+        {
+          "param": "Kaoss Y Amt",
+          "widget": "knob",
+          "polarity": "bipolar"
+        },
+        {
+          "param": "Ball X",
+          "widget": "knob",
+          "polarity": "bipolar"
+        },
+        {
+          "param": "Ball Y",
+          "widget": "knob",
+          "polarity": "bipolar"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "pages": [
+    {
+      "name": "CLEAN",
+      "controls": [
+        { "param": "Clean", "widget": "fader" },
+        { "param": "Noise Removed", "widget": "fader" }
+      ]
+    }
+  ]
+}

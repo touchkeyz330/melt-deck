@@ -1,0 +1,42 @@
+{
+  "pages": [
+    {
+      "name": "MAX",
+      "controls": [
+        {
+          "param": "Threshold",
+          "widget": "fader"
+        },
+        {
+          "param": "Ceiling",
+          "widget": "knob"
+        },
+        {
+          "param": "Release",
+          "widget": "knob"
+        },
+        {
+          "param": "Auto Rel",
+          "widget": "switch"
+        },
+        {
+          "param": "Reduction",
+          "widget": "knob"
+        }
+      ]
+    },
+    {
+      "name": "OUTPUT",
+      "controls": [
+        {
+          "param": "True Peak",
+          "widget": "switch"
+        },
+        {
+          "param": "Dither",
+          "widget": "switch"
+        }
+      ]
+    }
+  ]
+}

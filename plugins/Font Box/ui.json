@@ -1,0 +1,19 @@
+{
+  "pages": [
+    { "name": "FONT",
+      "controls": [
+        { "param": "File",       "widget": "slider", "overlay": "menu" },
+        { "param": "Preset",     "widget": "knob" },
+        { "param": "Transpose",  "widget": "knob", "polarity": "bipolar" },
+        { "param": "Fine",       "widget": "knob", "polarity": "bipolar" },
+        { "param": "Volume",     "widget": "fader" },
+        { "param": "Velocity",   "widget": "knob" },
+        { "param": "Bend Range", "widget": "knob" },
+        { "param": "Bits",       "widget": "knob" },
+        { "param": "Brightness", "widget": "knob", "polarity": "bipolar" },
+        { "param": "Resonance",  "widget": "knob" },
+        { "param": "Attack",     "widget": "knob", "polarity": "bipolar" },
+        { "param": "Release",    "widget": "knob", "polarity": "bipolar" }
+      ] }
+  ]
+}

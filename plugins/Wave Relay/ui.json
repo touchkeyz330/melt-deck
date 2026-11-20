@@ -1,0 +1,280 @@
+{
+  "pages": [
+    {
+      "name": "SEQ",
+      "controls": [
+        {
+          "param": "Steps",
+          "widget": "knob"
+        },
+        {
+          "param": "Order",
+          "widget": "switch"
+        },
+        {
+          "param": "Crossfade",
+          "widget": "knob"
+        },
+        {
+          "param": "Key Sync",
+          "widget": "switch"
+        },
+        {
+          "param": "Sync",
+          "widget": "switch"
+        },
+        {
+          "param": "Step Div",
+          "widget": "slider",
+          "overlay": "menu",
+          "visibleWhen": {
+            "param": "Sync",
+            "choice": "On"
+          }
+        },
+        {
+          "param": "Step Time",
+          "widget": "knob",
+          "visibleWhen": {
+            "param": "Sync",
+            "choice": "Off"
+          }
+        },
+        {
+          "param": "Volume",
+          "widget": "fader"
+        }
+      ]
+    },
+    {
+      "name": "WAVES",
+      "controls": [
+        {
+          "param": "Wave 1",
+          "widget": "slider",
+          "overlay": "menu"
+        },
+        {
+          "param": "Wave 2",
+          "widget": "slider",
+          "overlay": "menu"
+        },
+        {
+          "param": "Wave 3",
+          "widget": "slider",
+          "overlay": "menu"
+        },
+        {
+          "param": "Wave 4",
+          "widget": "slider",
+          "overlay": "menu"
+        },
+        {
+          "param": "Wave 5",
+          "widget": "slider",
+          "overlay": "menu"
+        },
+        {
+          "param": "Wave 6",
+          "widget": "slider",
+          "overlay": "menu"
+        },
+        {
+          "param": "Wave 7",
+          "widget": "slider",
+          "overlay": "menu"
+        },
+        {
+          "param": "Wave 8",
+          "widget": "slider",
+          "overlay": "menu"
+        }
+      ]
+    },
+    {
+      "name": "STEPS",
+      "controls": [
+        {
+          "param": "Pitch 1",
+          "widget": "knob",
+          "polarity": "bipolar"
+        },
+        {
+          "param": "Pitch 2",
+          "widget": "knob",
+          "polarity": "bipolar"
+        },
+        {
+          "param": "Pitch 3",
+          "widget": "knob",
+          "polarity": "bipolar"
+        },
+        {
+          "param": "Pitch 4",
+          "widget": "knob",
+          "polarity": "bipolar"
+        },
+        {
+          "param": "Pitch 5",
+          "widget": "knob",
+          "polarity": "bipolar"
+        },
+        {
+          "param": "Pitch 6",
+          "widget": "knob",
+          "polarity": "bipolar"
+        },
+        {
+          "param": "Pitch 7",
+          "widget": "knob",
+          "polarity": "bipolar"
+        },
+        {
+          "param": "Pitch 8",
+          "widget": "knob",
+          "polarity": "bipolar"
+        },
+        {
+          "param": "Level 1",
+          "widget": "fader"
+        },
+        {
+          "param": "Level 2",
+          "widget": "fader"
+        },
+        {
+          "param": "Level 3",
+          "widget": "fader"
+        },
+        {
+          "param": "Level 4",
+          "widget": "fader"
+        },
+        {
+          "param": "Level 5",
+          "widget": "fader"
+        },
+        {
+          "param": "Level 6",
+          "widget": "fader"
+        },
+        {
+          "param": "Level 7",
+          "widget": "fader"
+        },
+        {
+          "param": "Level 8",
+          "widget": "fader"
+        }
+      ]
+    },
+    {
+      "name": "DRONE",
+      "controls": [
+        {
+          "param": "Drone Wave",
+          "widget": "slider",
+          "overlay": "menu"
+        },
+        {
+          "param": "Drone Oct",
+          "widget": "knob",
+          "polarity": "bipolar"
+        },
+        {
+          "param": "Drone Det",
+          "widget": "knob",
+          "polarity": "bipolar"
+        },
+        {
+          "param": "Mix",
+          "widget": "knob"
+        },
+        {
+          "param": "Vector",
+          "widget": "knob",
+          "polarity": "bipolar"
+        },
+        {
+          "param": "Vec Time",
+          "widget": "knob"
+        },
+        {
+          "param": "Bend Range",
+          "widget": "knob"
+        },
+        {
+          "param": "Chorus",
+          "widget": "knob"
+        }
+      ]
+    },
+    {
+      "name": "FILTER",
+      "controls": [
+        {
+          "param": "Cutoff",
+          "widget": "knob"
+        },
+        {
+          "param": "Resonance",
+          "widget": "knob"
+        },
+        {
+          "param": "Env Amount",
+          "widget": "knob",
+          "polarity": "bipolar"
+        },
+        {
+          "param": "Key Track",
+          "widget": "knob"
+        },
+        {
+          "param": "Filt Attack",
+          "widget": "fader"
+        },
+        {
+          "param": "Filt Decay",
+          "widget": "fader"
+        },
+        {
+          "param": "Filt Sustain",
+          "widget": "fader"
+        },
+        {
+          "param": "Filt Release",
+          "widget": "fader"
+        }
+      ]
+    },
+    {
+      "name": "AMP",
+      "controls": [
+        {
+          "param": "Attack",
+          "widget": "fader"
+        },
+        {
+          "param": "Decay",
+          "widget": "fader"
+        },
+        {
+          "param": "Sustain",
+          "widget": "fader"
+        },
+        {
+          "param": "Release",
+          "widget": "fader"
+        },
+        {
+          "param": "Velocity",
+          "widget": "knob"
+        },
+        {
+          "param": "Volume",
+          "widget": "fader"
+        }
+      ]
+    }
+  ]
+}

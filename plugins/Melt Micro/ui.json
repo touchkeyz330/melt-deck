@@ -1,0 +1,303 @@
+{
+  "pages": [
+    {
+      "name": "OSC",
+      "controls": [
+        {
+          "param": "Osc1 Wave",
+          "widget": "slider",
+          "overlay": "menu"
+        },
+        {
+          "param": "Osc1 Ctrl1",
+          "widget": "knob"
+        },
+        {
+          "param": "Osc1 Ctrl2",
+          "widget": "knob"
+        },
+        {
+          "param": "Osc2 Wave",
+          "widget": "switch"
+        },
+        {
+          "param": "Osc Mod",
+          "widget": "switch"
+        },
+        {
+          "param": "Osc2 Semi",
+          "widget": "knob",
+          "polarity": "bipolar"
+        },
+        {
+          "param": "Osc2 Tune",
+          "widget": "knob",
+          "polarity": "bipolar"
+        },
+        {
+          "param": "Osc1 Level",
+          "widget": "knob"
+        },
+        {
+          "param": "Osc2 Level",
+          "widget": "knob"
+        },
+        {
+          "param": "Noise Level",
+          "widget": "knob"
+        },
+        {
+          "param": "Portamento",
+          "widget": "knob"
+        },
+        {
+          "param": "Voice Mode",
+          "widget": "slider",
+          "overlay": "menu"
+        },
+        {
+          "param": "Voices",
+          "widget": "knob"
+        },
+        {
+          "param": "Bend Range",
+          "widget": "knob"
+        }
+      ]
+    },
+    {
+      "name": "FLT/AMP",
+      "controls": [
+        {
+          "param": "Filter Type",
+          "widget": "switch"
+        },
+        {
+          "param": "Cutoff",
+          "widget": "knob"
+        },
+        {
+          "param": "Resonance",
+          "widget": "knob"
+        },
+        {
+          "param": "EG1 Int",
+          "widget": "knob",
+          "polarity": "bipolar"
+        },
+        {
+          "param": "Key Track",
+          "widget": "knob",
+          "polarity": "bipolar"
+        },
+        {
+          "param": "Level",
+          "widget": "knob"
+        },
+        {
+          "param": "Pan",
+          "widget": "knob",
+          "polarity": "bipolar"
+        },
+        {
+          "param": "Distortion",
+          "widget": "switch"
+        },
+        {
+          "param": "EG1 Attack",
+          "widget": "knob"
+        },
+        {
+          "param": "EG1 Decay",
+          "widget": "knob"
+        },
+        {
+          "param": "EG1 Sustain",
+          "widget": "knob"
+        },
+        {
+          "param": "EG1 Release",
+          "widget": "knob"
+        },
+        {
+          "param": "EG2 Attack",
+          "widget": "knob"
+        },
+        {
+          "param": "EG2 Decay",
+          "widget": "knob"
+        },
+        {
+          "param": "EG2 Sustain",
+          "widget": "knob"
+        },
+        {
+          "param": "EG2 Release",
+          "widget": "knob"
+        }
+      ]
+    },
+    {
+      "name": "LFO",
+      "controls": [
+        {
+          "param": "LFO1 Wave",
+          "widget": "switch"
+        },
+        {
+          "param": "LFO1 Rate",
+          "widget": "knob"
+        },
+        {
+          "param": "LFO1 Sync",
+          "widget": "slider",
+          "overlay": "menu"
+        },
+        {
+          "param": "LFO2 Wave",
+          "widget": "switch"
+        },
+        {
+          "param": "LFO2 Rate",
+          "widget": "knob"
+        },
+        {
+          "param": "LFO2 Sync",
+          "widget": "slider",
+          "overlay": "menu"
+        }
+      ]
+    },
+    {
+      "name": "PATCH",
+      "controls": [
+        {
+          "param": "Patch1 Src",
+          "widget": "slider",
+          "overlay": "menu"
+        },
+        {
+          "param": "Patch1 Dst",
+          "widget": "slider",
+          "overlay": "menu"
+        },
+        {
+          "param": "Patch1 Amt",
+          "widget": "knob",
+          "polarity": "bipolar"
+        },
+        {
+          "param": "Patch2 Src",
+          "widget": "slider",
+          "overlay": "menu"
+        },
+        {
+          "param": "Patch2 Dst",
+          "widget": "slider",
+          "overlay": "menu"
+        },
+        {
+          "param": "Patch2 Amt",
+          "widget": "knob",
+          "polarity": "bipolar"
+        },
+        {
+          "param": "Patch3 Src",
+          "widget": "slider",
+          "overlay": "menu"
+        },
+        {
+          "param": "Patch3 Dst",
+          "widget": "slider",
+          "overlay": "menu"
+        },
+        {
+          "param": "Patch3 Amt",
+          "widget": "knob",
+          "polarity": "bipolar"
+        },
+        {
+          "param": "Patch4 Src",
+          "widget": "slider",
+          "overlay": "menu"
+        },
+        {
+          "param": "Patch4 Dst",
+          "widget": "slider",
+          "overlay": "menu"
+        },
+        {
+          "param": "Patch4 Amt",
+          "widget": "knob",
+          "polarity": "bipolar"
+        }
+      ]
+    },
+    {
+      "name": "ARP/FX",
+      "controls": [
+        {
+          "param": "Arp",
+          "widget": "switch"
+        },
+        {
+          "param": "Arp Type",
+          "widget": "slider",
+          "overlay": "menu"
+        },
+        {
+          "param": "Arp Rate",
+          "widget": "slider",
+          "overlay": "menu"
+        },
+        {
+          "param": "Arp Range",
+          "widget": "knob"
+        },
+        {
+          "param": "Arp Gate",
+          "widget": "knob"
+        },
+        {
+          "param": "Mod FX",
+          "widget": "switch"
+        },
+        {
+          "param": "Mod Speed",
+          "widget": "knob"
+        },
+        {
+          "param": "Mod Depth",
+          "widget": "knob"
+        },
+        {
+          "param": "Delay Type",
+          "widget": "switch"
+        },
+        {
+          "param": "Delay Time",
+          "widget": "slider",
+          "overlay": "menu"
+        },
+        {
+          "param": "Delay Depth",
+          "widget": "knob"
+        },
+        {
+          "param": "Delay Mix",
+          "widget": "knob"
+        },
+        {
+          "param": "EQ Low",
+          "widget": "knob",
+          "polarity": "bipolar"
+        },
+        {
+          "param": "EQ High",
+          "widget": "knob",
+          "polarity": "bipolar"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "name": "Melt Bus",
+  "manufacturer": "Meltdown Empire",
+  "version": "1.0.0",
+  "format": "vst2",
+  "kind": "effect",
+  "uid": "M6Kn",
+  "numInputs": 2,
+  "numOutputs": 2,
+  "category": "Distortion",
+  "file32": "VST/melt-bus-arm32.so",
+  "file64": "VST/melt-bus-arm64.so",
+  "description": "Melt Bus: console bus colour. Transformer and class-A bus-amp style saturation with even and odd harmonics, Warm/Bright tone, console bleed and auto gain. Put it on your drum bus, music bus or master.",
+  "author": "Meltdown Empire",
+  "url": "",
+  "license": "MIT"
+}

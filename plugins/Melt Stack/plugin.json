@@ -1,0 +1,17 @@
+{
+  "name": "Melt Stack",
+  "manufacturer": "Meltdown Empire",
+  "version": "1.0.0",
+  "format": "vst2",
+  "kind": "instrument",
+  "uid": "MnjR",
+  "numInputs": 0,
+  "numOutputs": 2,
+  "category": "Synth",
+  "file32": "VST/melt-stack-arm32.so",
+  "file64": "VST/melt-stack-arm64.so",
+  "description": "Melt Stack: a 4-oscillator, 4-layer analog-modelling synth. Classic/Shaper/Digital oscillators, ring/sync/X-mod, ladder + MS-style filters, Layer Stack/Rotate, per-voice motion sequencer and a physics X/Y ball for modulation and vector blends. 12 original presets.",
+  "author": "Meltdown Empire",
+  "url": "",
+  "license": "MIT"
+}

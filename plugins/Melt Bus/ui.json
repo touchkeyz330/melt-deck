@@ -1,0 +1,43 @@
+{
+  "pages": [
+    {
+      "name": "BUS",
+      "controls": [
+        {
+          "param": "Drive",
+          "widget": "knob"
+        },
+        {
+          "param": "Tone",
+          "widget": "switch"
+        },
+        {
+          "param": "Output",
+          "widget": "knob",
+          "polarity": "bipolar"
+        },
+        {
+          "param": "Mix",
+          "widget": "knob"
+        }
+      ]
+    },
+    {
+      "name": "CONSOLE",
+      "controls": [
+        {
+          "param": "Auto Gain",
+          "widget": "switch"
+        },
+        {
+          "param": "Bleed",
+          "widget": "knob"
+        },
+        {
+          "param": "Noise",
+          "widget": "switch"
+        }
+      ]
+    }
+  ]
+}

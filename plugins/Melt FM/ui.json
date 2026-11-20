@@ -1,0 +1,312 @@
+{
+  "pages": [
+    {
+      "name": "PATCH",
+      "controls": [
+        {
+          "param": "Algorithm",
+          "widget": "slider",
+          "overlay": "menu"
+        },
+        {
+          "param": "Feedback",
+          "widget": "knob"
+        },
+        {
+          "param": "Volume",
+          "widget": "fader"
+        },
+        {
+          "param": "Key Mode",
+          "widget": "switch"
+        },
+        {
+          "param": "Portamento",
+          "widget": "knob"
+        },
+        {
+          "param": "Bend Range",
+          "widget": "knob"
+        },
+        {
+          "param": "Wheel Vib",
+          "widget": "knob"
+        },
+        {
+          "param": "LFO Rate",
+          "widget": "knob"
+        },
+        {
+          "param": "LFO Wave",
+          "widget": "slider",
+          "overlay": "menu"
+        },
+        {
+          "param": "LFO Delay",
+          "widget": "knob"
+        },
+        {
+          "param": "LFO>Pitch",
+          "widget": "knob"
+        },
+        {
+          "param": "LFO>Bright",
+          "widget": "knob"
+        },
+        {
+          "param": "LFO>Amp",
+          "widget": "knob"
+        },
+        {
+          "param": "Cutoff",
+          "widget": "knob"
+        },
+        {
+          "param": "Reso",
+          "widget": "knob"
+        }
+      ]
+    },
+    {
+      "name": "OP 1",
+      "controls": [
+        {
+          "param": "Op1 Ratio",
+          "widget": "knob"
+        },
+        {
+          "param": "Op1 Fine",
+          "widget": "knob"
+        },
+        {
+          "param": "Op1 Detune",
+          "widget": "knob",
+          "polarity": "bipolar"
+        },
+        {
+          "param": "Op1 Level",
+          "widget": "knob"
+        },
+        {
+          "param": "Op1 Wave",
+          "widget": "switch"
+        },
+        {
+          "param": "Op1 Attack",
+          "widget": "knob"
+        },
+        {
+          "param": "Op1 Decay",
+          "widget": "knob"
+        },
+        {
+          "param": "Op1 Sustain",
+          "widget": "knob"
+        },
+        {
+          "param": "Op1 Release",
+          "widget": "knob"
+        },
+        {
+          "param": "Op1 Velocity",
+          "widget": "knob"
+        },
+        {
+          "param": "Op1 Key Scale",
+          "widget": "knob"
+        }
+      ]
+    },
+    {
+      "name": "OP 2",
+      "controls": [
+        {
+          "param": "Op2 Ratio",
+          "widget": "knob"
+        },
+        {
+          "param": "Op2 Fine",
+          "widget": "knob"
+        },
+        {
+          "param": "Op2 Detune",
+          "widget": "knob",
+          "polarity": "bipolar"
+        },
+        {
+          "param": "Op2 Level",
+          "widget": "knob"
+        },
+        {
+          "param": "Op2 Wave",
+          "widget": "switch"
+        },
+        {
+          "param": "Op2 Attack",
+          "widget": "knob"
+        },
+        {
+          "param": "Op2 Decay",
+          "widget": "knob"
+        },
+        {
+          "param": "Op2 Sustain",
+          "widget": "knob"
+        },
+        {
+          "param": "Op2 Release",
+          "widget": "knob"
+        },
+        {
+          "param": "Op2 Velocity",
+          "widget": "knob"
+        },
+        {
+          "param": "Op2 Key Scale",
+          "widget": "knob"
+        }
+      ]
+    },
+    {
+      "name": "OP 3",
+      "controls": [
+        {
+          "param": "Op3 Ratio",
+          "widget": "knob"
+        },
+        {
+          "param": "Op3 Fine",
+          "widget": "knob"
+        },
+        {
+          "param": "Op3 Detune",
+          "widget": "knob",
+          "polarity": "bipolar"
+        },
+        {
+          "param": "Op3 Level",
+          "widget": "knob"
+        },
+        {
+          "param": "Op3 Wave",
+          "widget": "switch"
+        },
+        {
+          "param": "Op3 Attack",
+          "widget": "knob"
+        },
+        {
+          "param": "Op3 Decay",
+          "widget": "knob"
+        },
+        {
+          "param": "Op3 Sustain",
+          "widget": "knob"
+        },
+        {
+          "param": "Op3 Release",
+          "widget": "knob"
+        },
+        {
+          "param": "Op3 Velocity",
+          "widget": "knob"
+        },
+        {
+          "param": "Op3 Key Scale",
+          "widget": "knob"
+        }
+      ]
+    },
+    {
+      "name": "OP 4",
+      "controls": [
+        {
+          "param": "Op4 Ratio",
+          "widget": "knob"
+        },
+        {
+          "param": "Op4 Fine",
+          "widget": "knob"
+        },
+        {
+          "param": "Op4 Detune",
+          "widget": "knob",
+          "polarity": "bipolar"
+        },
+        {
+          "param": "Op4 Level",
+          "widget": "knob"
+        },
+        {
+          "param": "Op4 Wave",
+          "widget": "switch"
+        },
+        {
+          "param": "Op4 Attack",
+          "widget": "knob"
+        },
+        {
+          "param": "Op4 Decay",
+          "widget": "knob"
+        },
+        {
+          "param": "Op4 Sustain",
+          "widget": "knob"
+        },
+        {
+          "param": "Op4 Release",
+          "widget": "knob"
+        },
+        {
+          "param": "Op4 Velocity",
+          "widget": "knob"
+        },
+        {
+          "param": "Op4 Key Scale",
+          "widget": "knob"
+        }
+      ]
+    },
+    {
+      "name": "FX",
+      "controls": [
+        {
+          "param": "Chorus Rate",
+          "widget": "knob"
+        },
+        {
+          "param": "Chorus Depth",
+          "widget": "knob"
+        },
+        {
+          "param": "Chorus Level",
+          "widget": "knob"
+        },
+        {
+          "param": "Delay Time",
+          "widget": "knob"
+        },
+        {
+          "param": "Delay Fdbk",
+          "widget": "knob"
+        },
+        {
+          "param": "Delay Mix",
+          "widget": "knob"
+        },
+        {
+          "param": "Reverb Time",
+          "widget": "knob"
+        },
+        {
+          "param": "Reverb Level",
+          "widget": "knob"
+        },
+        {
+          "param": "Reverb Damp",
+          "widget": "knob"
+        }
+      ]
+    }
+  ]
+}

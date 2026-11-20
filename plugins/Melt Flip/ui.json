@@ -1,0 +1,30 @@
+{
+  "pages": [
+    { "name": "FLIP",
+      "controls": [
+        { "param": "Song",       "widget": "slider", "overlay": "menu" },
+        { "param": "Chop",       "widget": "switch" },
+        { "param": "Start Bar",  "widget": "knob" },
+        { "param": "Status",     "widget": "slider" },
+        { "param": "Key Shift",  "widget": "knob", "polarity": "bipolar" },
+        { "param": "Tempo Sync", "widget": "switch" },
+        { "param": "BPM Fix",    "widget": "switch" },
+        { "param": "Volume",     "widget": "fader" },
+        { "param": "Song BPM",   "widget": "slider" },
+        { "param": "Song Key",   "widget": "slider" }
+      ] },
+    { "name": "PADS",
+      "controls": [
+        { "param": "Play Mode",  "widget": "switch" },
+        { "param": "Choke",      "widget": "switch" },
+        { "param": "Length",     "widget": "knob" },
+        { "param": "Pitch",      "widget": "knob", "polarity": "bipolar" },
+        { "param": "Attack",     "widget": "knob" },
+        { "param": "Release",    "widget": "knob" },
+        { "param": "Filter",     "widget": "knob", "polarity": "bipolar" },
+        { "param": "Volume",     "widget": "fader" },
+        { "param": "Keys Mode",  "widget": "switch" },
+        { "param": "Key Pad",    "widget": "knob" }
+      ] }
+  ]
+}

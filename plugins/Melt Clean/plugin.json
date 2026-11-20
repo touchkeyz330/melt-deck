@@ -1,0 +1,17 @@
+{
+  "name": "Melt Clean",
+  "manufacturer": "Meltdown Empire",
+  "version": "1.0.0",
+  "format": "vst2",
+  "kind": "effect",
+  "uid": "McMw",
+  "numInputs": 2,
+  "numOutputs": 2,
+  "category": "Effect",
+  "file32": "VST/melt-clean-arm32.so",
+  "file64": "VST/melt-clean-arm64.so",
+  "description": "Melt Clean: a one-fader noise suppressor. Learns the hiss and room noise by itself and removes up to 30 dB while held notes and vocals stay put.",
+  "author": "Meltdown Empire",
+  "url": "",
+  "license": "MIT"
+}

@@ -1,0 +1,17 @@
+{
+  "name": "Font Box",
+  "manufacturer": "Meltdown Empire",
+  "version": "1.0.0",
+  "format": "vst2",
+  "kind": "instrument",
+  "uid": "MVhd",
+  "numInputs": 0,
+  "numOutputs": 2,
+  "category": "Synth",
+  "file32": "VST/font-box-arm32.so",
+  "file64": "VST/font-box-arm64.so",
+  "description": "Font Box: SoundFont 2 (.sf2) player. Drop .sf2 files in Content/SoundFonts, pick a file and preset. Layers, loops, envelopes, filter, pan.",
+  "author": "Meltdown Empire",
+  "url": "",
+  "license": "MIT"
+}

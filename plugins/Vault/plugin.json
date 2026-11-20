@@ -1,0 +1,17 @@
+{
+  "name": "Vault",
+  "manufacturer": "Meltdown Empire",
+  "version": "1.0.0",
+  "format": "vst2",
+  "kind": "instrument",
+  "uid": "MCb9",
+  "numInputs": 0,
+  "numOutputs": 2,
+  "category": "Synth",
+  "file32": "VST/vault-arm32.so",
+  "file64": "VST/vault-arm64.so",
+  "description": "Vault: 16-voice multisample rompler. Plays WAV banks from Content/ with loops, tuning, resonant filter, envelopes, LFO and bit crusher.",
+  "author": "Meltdown Empire",
+  "url": "",
+  "license": "MIT"
+}

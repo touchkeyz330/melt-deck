@@ -1,0 +1,17 @@
+{
+  "name": "Melt FM",
+  "manufacturer": "Meltdown Empire",
+  "version": "1.0.0",
+  "format": "vst2",
+  "kind": "instrument",
+  "uid": "MVvY",
+  "numInputs": 0,
+  "numOutputs": 2,
+  "category": "Synth",
+  "file32": "VST/melt-fm-arm32.so",
+  "file64": "VST/melt-fm-arm64.so",
+  "description": "Melt FM: a 4-operator FM synth. 8 algorithms, feedback, 4 operator waves, per-operator envelopes, velocity and key scaling; mono glide, LFO, filter, chorus, delay and reverb. 16 original patches.",
+  "author": "Meltdown Empire",
+  "url": "",
+  "license": "MIT"
+}

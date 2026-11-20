@@ -1,0 +1,17 @@
+{
+  "name": "Melt Venom",
+  "manufacturer": "Meltdown Empire",
+  "version": "1.0.0",
+  "format": "vst2",
+  "kind": "instrument",
+  "uid": "MPfy",
+  "numInputs": 0,
+  "numOutputs": 2,
+  "category": "Synth",
+  "file32": "VST/melt-venom-arm32.so",
+  "file64": "VST/melt-venom-arm64.so",
+  "description": "Melt Venom: a virtual-analog powerhouse. Hyper (up to 9-saw) and morphing-wave oscillators, sync, FM, ring, unison, saturating ladder + multimode filters, arpeggiator and FX. 16 original presets.",
+  "author": "Meltdown Empire",
+  "url": "",
+  "license": "MIT"
+}

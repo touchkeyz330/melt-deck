@@ -1,0 +1,50 @@
+{
+  "pages": [
+    { "name": "SOUND",
+      "controls": [
+        { "param": "Bank",       "widget": "slider", "overlay": "menu" },
+        { "param": "Sound",      "widget": "knob" },
+        { "param": "Tune",       "widget": "knob", "polarity": "bipolar" },
+        { "param": "Fine",       "widget": "knob", "polarity": "bipolar" },
+        { "param": "Volume",     "widget": "fader" },
+        { "param": "Velocity",   "widget": "knob" },
+        { "param": "Start",      "widget": "knob" },
+        { "param": "Bits",       "widget": "knob" },
+        { "param": "Loops",      "widget": "switch" },
+        { "param": "Bend Range", "widget": "knob" }
+      ] },
+    { "name": "FILTER",
+      "controls": [
+        { "param": "Cutoff",      "widget": "knob" },
+        { "param": "Resonance",   "widget": "knob" },
+        { "param": "Filter Mode", "widget": "switch" },
+        { "param": "Drive",       "widget": "knob" },
+        { "param": "Env Amount",  "widget": "knob", "polarity": "bipolar" },
+        { "param": "Key Track",   "widget": "knob" },
+        { "widget": "empty" }, { "widget": "empty" },
+        { "param": "Filt Attack",  "widget": "fader" },
+        { "param": "Filt Decay",   "widget": "fader" },
+        { "param": "Filt Sustain", "widget": "fader" },
+        { "param": "Filt Release", "widget": "fader" }
+      ] },
+    { "name": "AMP",
+      "controls": [
+        { "param": "Attack",   "widget": "fader" },
+        { "param": "Decay",    "widget": "fader" },
+        { "param": "Sustain",  "widget": "fader" },
+        { "param": "Release",  "widget": "fader" },
+        { "param": "Volume",   "widget": "fader" },
+        { "param": "Velocity", "widget": "knob" }
+      ] },
+    { "name": "LFO",
+      "controls": [
+        { "param": "LFO Shape", "widget": "slider", "overlay": "menu" },
+        { "param": "LFO Sync",  "widget": "switch" },
+        { "param": "LFO Rate",  "widget": "knob", "visibleWhen": { "param": "LFO Sync", "choice": "Off" } },
+        { "param": "LFO Div",   "widget": "slider", "overlay": "menu", "visibleWhen": { "param": "LFO Sync", "choice": "On" } },
+        { "param": "LFO>Pitch",  "widget": "knob" },
+        { "param": "LFO>Filter", "widget": "knob", "polarity": "bipolar" },
+        { "param": "Wheel Vib",  "widget": "knob" }
+      ] }
+  ]
+}

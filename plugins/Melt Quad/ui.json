@@ -1,0 +1,451 @@
+{
+  "pages": [
+    {
+      "name": "MAIN",
+      "controls": [
+        {
+          "param": "A Sound",
+          "widget": "slider",
+          "overlay": "menu"
+        },
+        {
+          "param": "A Level",
+          "widget": "fader"
+        },
+        {
+          "param": "B Sound",
+          "widget": "slider",
+          "overlay": "menu"
+        },
+        {
+          "param": "B Level",
+          "widget": "fader"
+        },
+        {
+          "param": "C Sound",
+          "widget": "slider",
+          "overlay": "menu"
+        },
+        {
+          "param": "C Level",
+          "widget": "fader"
+        },
+        {
+          "param": "D Sound",
+          "widget": "slider",
+          "overlay": "menu"
+        },
+        {
+          "param": "D Level",
+          "widget": "fader"
+        },
+        {
+          "param": "Delay Time",
+          "widget": "slider",
+          "overlay": "menu"
+        },
+        {
+          "param": "Delay Feedback",
+          "widget": "knob"
+        },
+        {
+          "param": "Delay Return",
+          "widget": "knob"
+        },
+        {
+          "param": "Master",
+          "widget": "fader"
+        },
+        {
+          "param": "Reverb Size",
+          "widget": "knob"
+        },
+        {
+          "param": "Reverb Damp",
+          "widget": "knob"
+        },
+        {
+          "param": "Reverb Return",
+          "widget": "knob"
+        },
+        {
+          "param": "Width",
+          "widget": "knob"
+        }
+      ]
+    },
+    {
+      "name": "PART A",
+      "controls": [
+        {
+          "param": "A On",
+          "widget": "switch"
+        },
+        {
+          "param": "A Channel",
+          "widget": "slider",
+          "overlay": "menu"
+        },
+        {
+          "param": "A Semi",
+          "widget": "knob",
+          "polarity": "bipolar"
+        },
+        {
+          "param": "A Fine",
+          "widget": "knob",
+          "polarity": "bipolar"
+        },
+        {
+          "param": "A Key Low",
+          "widget": "knob"
+        },
+        {
+          "param": "A Key High",
+          "widget": "knob"
+        },
+        {
+          "param": "A Low EQ",
+          "widget": "knob",
+          "polarity": "bipolar"
+        },
+        {
+          "param": "A High EQ",
+          "widget": "knob",
+          "polarity": "bipolar"
+        },
+        {
+          "param": "A Filter",
+          "widget": "switch"
+        },
+        {
+          "param": "A Cutoff",
+          "widget": "knob"
+        },
+        {
+          "param": "A Reso",
+          "widget": "knob"
+        },
+        {
+          "param": "A Env Amt",
+          "widget": "knob",
+          "polarity": "bipolar"
+        },
+        {
+          "param": "A Attack",
+          "widget": "fader"
+        },
+        {
+          "param": "A Decay",
+          "widget": "fader"
+        },
+        {
+          "param": "A Sustain",
+          "widget": "fader"
+        },
+        {
+          "param": "A Release",
+          "widget": "fader"
+        }
+      ]
+    },
+    {
+      "name": "PART B",
+      "controls": [
+        {
+          "param": "B On",
+          "widget": "switch"
+        },
+        {
+          "param": "B Channel",
+          "widget": "slider",
+          "overlay": "menu"
+        },
+        {
+          "param": "B Semi",
+          "widget": "knob",
+          "polarity": "bipolar"
+        },
+        {
+          "param": "B Fine",
+          "widget": "knob",
+          "polarity": "bipolar"
+        },
+        {
+          "param": "B Key Low",
+          "widget": "knob"
+        },
+        {
+          "param": "B Key High",
+          "widget": "knob"
+        },
+        {
+          "param": "B Low EQ",
+          "widget": "knob",
+          "polarity": "bipolar"
+        },
+        {
+          "param": "B High EQ",
+          "widget": "knob",
+          "polarity": "bipolar"
+        },
+        {
+          "param": "B Filter",
+          "widget": "switch"
+        },
+        {
+          "param": "B Cutoff",
+          "widget": "knob"
+        },
+        {
+          "param": "B Reso",
+          "widget": "knob"
+        },
+        {
+          "param": "B Env Amt",
+          "widget": "knob",
+          "polarity": "bipolar"
+        },
+        {
+          "param": "B Attack",
+          "widget": "fader"
+        },
+        {
+          "param": "B Decay",
+          "widget": "fader"
+        },
+        {
+          "param": "B Sustain",
+          "widget": "fader"
+        },
+        {
+          "param": "B Release",
+          "widget": "fader"
+        }
+      ]
+    },
+    {
+      "name": "PART C",
+      "controls": [
+        {
+          "param": "C On",
+          "widget": "switch"
+        },
+        {
+          "param": "C Channel",
+          "widget": "slider",
+          "overlay": "menu"
+        },
+        {
+          "param": "C Semi",
+          "widget": "knob",
+          "polarity": "bipolar"
+        },
+        {
+          "param": "C Fine",
+          "widget": "knob",
+          "polarity": "bipolar"
+        },
+        {
+          "param": "C Key Low",
+          "widget": "knob"
+        },
+        {
+          "param": "C Key High",
+          "widget": "knob"
+        },
+        {
+          "param": "C Low EQ",
+          "widget": "knob",
+          "polarity": "bipolar"
+        },
+        {
+          "param": "C High EQ",
+          "widget": "knob",
+          "polarity": "bipolar"
+        },
+        {
+          "param": "C Filter",
+          "widget": "switch"
+        },
+        {
+          "param": "C Cutoff",
+          "widget": "knob"
+        },
+        {
+          "param": "C Reso",
+          "widget": "knob"
+        },
+        {
+          "param": "C Env Amt",
+          "widget": "knob",
+          "polarity": "bipolar"
+        },
+        {
+          "param": "C Attack",
+          "widget": "fader"
+        },
+        {
+          "param": "C Decay",
+          "widget": "fader"
+        },
+        {
+          "param": "C Sustain",
+          "widget": "fader"
+        },
+        {
+          "param": "C Release",
+          "widget": "fader"
+        }
+      ]
+    },
+    {
+      "name": "PART D",
+      "controls": [
+        {
+          "param": "D On",
+          "widget": "switch"
+        },
+        {
+          "param": "D Channel",
+          "widget": "slider",
+          "overlay": "menu"
+        },
+        {
+          "param": "D Semi",
+          "widget": "knob",
+          "polarity": "bipolar"
+        },
+        {
+          "param": "D Fine",
+          "widget": "knob",
+          "polarity": "bipolar"
+        },
+        {
+          "param": "D Key Low",
+          "widget": "knob"
+        },
+        {
+          "param": "D Key High",
+          "widget": "knob"
+        },
+        {
+          "param": "D Low EQ",
+          "widget": "knob",
+          "polarity": "bipolar"
+        },
+        {
+          "param": "D High EQ",
+          "widget": "knob",
+          "polarity": "bipolar"
+        },
+        {
+          "param": "D Filter",
+          "widget": "switch"
+        },
+        {
+          "param": "D Cutoff",
+          "widget": "knob"
+        },
+        {
+          "param": "D Reso",
+          "widget": "knob"
+        },
+        {
+          "param": "D Env Amt",
+          "widget": "knob",
+          "polarity": "bipolar"
+        },
+        {
+          "param": "D Attack",
+          "widget": "fader"
+        },
+        {
+          "param": "D Decay",
+          "widget": "fader"
+        },
+        {
+          "param": "D Sustain",
+          "widget": "fader"
+        },
+        {
+          "param": "D Release",
+          "widget": "fader"
+        }
+      ]
+    },
+    {
+      "name": "MIXER",
+      "controls": [
+        {
+          "param": "A Pan",
+          "widget": "knob",
+          "polarity": "bipolar"
+        },
+        {
+          "param": "A Delay Send",
+          "widget": "knob"
+        },
+        {
+          "param": "A Reverb Send",
+          "widget": "knob"
+        },
+        {
+          "param": "A Comp",
+          "widget": "knob"
+        },
+        {
+          "param": "B Pan",
+          "widget": "knob",
+          "polarity": "bipolar"
+        },
+        {
+          "param": "B Delay Send",
+          "widget": "knob"
+        },
+        {
+          "param": "B Reverb Send",
+          "widget": "knob"
+        },
+        {
+          "param": "B Comp",
+          "widget": "knob"
+        },
+        {
+          "param": "C Pan",
+          "widget": "knob",
+          "polarity": "bipolar"
+        },
+        {
+          "param": "C Delay Send",
+          "widget": "knob"
+        },
+        {
+          "param": "C Reverb Send",
+          "widget": "knob"
+        },
+        {
+          "param": "C Comp",
+          "widget": "knob"
+        },
+        {
+          "param": "D Pan",
+          "widget": "knob",
+          "polarity": "bipolar"
+        },
+        {
+          "param": "D Delay Send",
+          "widget": "knob"
+        },
+        {
+          "param": "D Reverb Send",
+          "widget": "knob"
+        },
+        {
+          "param": "D Comp",
+          "widget": "knob"
+        }
+      ]
+    }
+  ]
+}

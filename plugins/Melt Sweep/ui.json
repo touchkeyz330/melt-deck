@@ -1,0 +1,35 @@
+{
+  "pages": [
+    {
+      "name": "SWEEP",
+      "controls": [
+        {
+          "param": "Filter",
+          "widget": "knob",
+          "polarity": "bipolar"
+        }
+      ]
+    },
+    {
+      "name": "SETUP",
+      "controls": [
+        {
+          "param": "Resonance",
+          "widget": "knob"
+        },
+        {
+          "param": "Slope",
+          "widget": "switch"
+        },
+        {
+          "param": "Drive",
+          "widget": "knob"
+        },
+        {
+          "param": "Mix",
+          "widget": "knob"
+        }
+      ]
+    }
+  ]
+}

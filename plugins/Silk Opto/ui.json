@@ -1,0 +1,18 @@
+{
+  "pages": [
+    { "name": "SILK",
+      "controls": [
+        { "param": "Threshold", "widget": "knob" },
+        { "param": "Ratio",     "widget": "knob" },
+        { "param": "Gain",      "widget": "knob" },
+        { "param": "GR",        "widget": "fader" },
+        { "param": "Timing",    "widget": "switch" },
+        { "param": "Attack",    "widget": "knob" },
+        { "param": "Release",   "widget": "knob" },
+        { "param": "Mix",       "widget": "knob" },
+        { "param": "Tube",      "widget": "knob" },
+        { "param": "SC HPF",    "widget": "switch" },
+        { "param": "Link",      "widget": "switch" }
+      ] }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "name": "Melt Deck",
+  "manufacturer": "Meltdown Empire",
+  "version": "1.0.0",
+  "format": "vst2",
+  "kind": "instrument",
+  "uid": "MzXw",
+  "numInputs": 0,
+  "numOutputs": 2,
+  "category": "Synth",
+  "file32": "VST/melt-deck-arm32.so",
+  "file64": "VST/melt-deck-arm64.so",
+  "description": "Melt Deck: two-deck DJ mixer. Key-lock pitch, sync with phase lock, cue, hot cues, loops, beat jump, 3-band kill EQ, filter, echo, crossfader. Pads control both decks.",
+  "author": "Meltdown Empire",
+  "url": "",
+  "license": "MIT"
+}

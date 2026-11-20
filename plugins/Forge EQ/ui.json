@@ -1,0 +1,21 @@
+{
+  "pages": [
+    { "name": "FORGE",
+      "controls": [
+        { "param": "Drive",     "widget": "knob" },
+        { "param": "Iron",      "widget": "knob" },
+        { "param": "High Pass", "widget": "slider", "overlay": "menu" },
+        { "param": "Output",    "widget": "knob", "polarity": "bipolar" },
+        { "param": "Low Gain",  "widget": "knob", "polarity": "bipolar" },
+        { "param": "Mid Gain",  "widget": "knob", "polarity": "bipolar" },
+        { "param": "High Gain", "widget": "knob", "polarity": "bipolar" },
+        { "param": "Mix",       "widget": "knob" },
+        { "param": "Low Freq",  "widget": "slider", "overlay": "menu" },
+        { "param": "Mid Freq",  "widget": "slider", "overlay": "menu" },
+        { "param": "High Freq", "widget": "switch" },
+        { "param": "EQ",        "widget": "switch" },
+        { "param": "Auto Gain", "widget": "switch" },
+        { "param": "Mid Q",     "widget": "switch" }
+      ] }
+  ]
+}

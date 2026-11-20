@@ -1,0 +1,55 @@
+name: Build MPC plugins
+
+on:
+  push:
+    branches: [mpc-plugins]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install the Zig compiler (MPC cross-compiler)
+        run: pip install ziglang
+      - name: Build every plugin for the MPC (32-bit + 64-bit)
+        run: |
+          set +e
+          mkdir -p out/logs out/plugins
+          PY="$(python -c 'import sys; print(sys.executable)')"
+          : > out/RESULTS.txt
+          for d in plugins/*/; do
+            n="$(basename "$d")"
+            [ -f "$d/plugin.json" ] || continue
+            echo "::group::$n"
+            python tools/build.py "$d" --target all --toolchain zig --zig "$PY" > "out/logs/$n.log" 2>&1
+            rc=$?
+            tail -40 "out/logs/$n.log"
+            echo "::endgroup::"
+            if [ $rc -eq 0 ] && ls -d "$d"build/*" - VST - "* >/dev/null 2>&1; then
+              cp -R "$d"build/*" - VST - "* out/plugins/
+              echo "OK    $n" >> out/RESULTS.txt
+            else
+              echo "FAIL  $n" >> out/RESULTS.txt
+            fi
+          done
+          cat out/RESULTS.txt
+          (cd out/plugins && zip -qr "../Meltdown-Empire-MPC-Plugins.zip" .)
+          exit 0
+      - name: Save the results to the branch
+        run: |
+          git config user.name "melt-build-bot"
+          git config user.email "melt-build-bot@users.noreply.github.com"
+          git add -f out/RESULTS.txt out/logs out/Meltdown-Empire-MPC-Plugins.zip
+          git commit -m "MPC plugin builds (run ${{ github.run_number }})" || exit 0
+          git push
+      - uses: actions/upload-artifact@v4
+        with:
+          name: Meltdown-Empire-MPC-Plugins
+          path: out/plugins

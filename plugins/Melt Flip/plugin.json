@@ -1,0 +1,17 @@
+{
+  "name": "Melt Flip",
+  "manufacturer": "Meltdown Empire",
+  "version": "1.0.0",
+  "format": "vst2",
+  "kind": "instrument",
+  "uid": "MJ2Y",
+  "numInputs": 0,
+  "numOutputs": 2,
+  "category": "Synth",
+  "file32": "VST/melt-flip-arm32.so",
+  "file64": "VST/melt-flip-arm64.so",
+  "description": "Melt Flip: song chopper. Loads WAV/MP3/FLAC, detects tempo, bars, key and hits, chops to 16 pads (Hits, Bars, Beats, 16ths); key shift and tempo sync by time-stretch; one-shot/gate/loop, mono/poly, keys mode, DJ filter.",
+  "author": "Meltdown Empire",
+  "url": "",
+  "license": "MIT"
+}

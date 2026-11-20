@@ -1,0 +1,252 @@
+{
+  "pages": [
+    {
+      "name": "VCO",
+      "controls": [
+        {
+          "param": "VCO1 Wave",
+          "widget": "switch"
+        },
+        {
+          "param": "VCO1 Scale",
+          "widget": "switch"
+        },
+        {
+          "param": "VCO1 PW",
+          "widget": "knob"
+        },
+        {
+          "param": "VCO1 Level",
+          "widget": "knob"
+        },
+        {
+          "param": "VCO2 Wave",
+          "widget": "switch"
+        },
+        {
+          "param": "VCO2 Scale",
+          "widget": "switch"
+        },
+        {
+          "param": "VCO2 Pitch",
+          "widget": "knob",
+          "polarity": "bipolar"
+        },
+        {
+          "param": "VCO2 Level",
+          "widget": "knob"
+        },
+        {
+          "param": "Portamento",
+          "widget": "knob"
+        },
+        {
+          "param": "MG Freq Mod",
+          "widget": "knob"
+        },
+        {
+          "param": "EG1 Freq Mod",
+          "widget": "knob",
+          "polarity": "bipolar"
+        },
+        {
+          "param": "Master Tune",
+          "widget": "knob",
+          "polarity": "bipolar"
+        },
+        {
+          "param": "Key Mode",
+          "widget": "switch"
+        },
+        {
+          "param": "Bend Range",
+          "widget": "knob"
+        },
+        {
+          "param": "Kbd Track",
+          "widget": "knob"
+        }
+      ]
+    },
+    {
+      "name": "FILTERS",
+      "controls": [
+        {
+          "param": "HP Cutoff",
+          "widget": "knob"
+        },
+        {
+          "param": "HP Peak",
+          "widget": "knob"
+        },
+        {
+          "param": "HP MG Mod",
+          "widget": "knob",
+          "polarity": "bipolar"
+        },
+        {
+          "param": "HP EG2 Mod",
+          "widget": "knob",
+          "polarity": "bipolar"
+        },
+        {
+          "param": "LP Cutoff",
+          "widget": "knob"
+        },
+        {
+          "param": "LP Peak",
+          "widget": "knob"
+        },
+        {
+          "param": "LP MG Mod",
+          "widget": "knob",
+          "polarity": "bipolar"
+        },
+        {
+          "param": "LP EG2 Mod",
+          "widget": "knob",
+          "polarity": "bipolar"
+        },
+        {
+          "param": "Drive",
+          "widget": "knob"
+        },
+        {
+          "param": "Volume",
+          "widget": "fader"
+        }
+      ]
+    },
+    {
+      "name": "MG / EG",
+      "controls": [
+        {
+          "param": "MG Wave",
+          "widget": "knob"
+        },
+        {
+          "param": "MG Freq",
+          "widget": "knob"
+        },
+        {
+          "widget": "empty"
+        },
+        {
+          "widget": "empty"
+        },
+        {
+          "param": "EG1 Delay",
+          "widget": "fader"
+        },
+        {
+          "param": "EG1 Attack",
+          "widget": "fader"
+        },
+        {
+          "param": "EG1 Release",
+          "widget": "fader"
+        },
+        {
+          "widget": "empty"
+        },
+        {
+          "param": "EG2 Hold",
+          "widget": "fader"
+        },
+        {
+          "param": "EG2 Attack",
+          "widget": "fader"
+        },
+        {
+          "param": "EG2 Decay",
+          "widget": "fader"
+        },
+        {
+          "param": "EG2 Sustain",
+          "widget": "fader"
+        },
+        {
+          "param": "EG2 Release",
+          "widget": "fader"
+        }
+      ]
+    },
+    {
+      "name": "PATCH",
+      "controls": [
+        {
+          "param": "Cable1 From",
+          "widget": "slider",
+          "overlay": "menu"
+        },
+        {
+          "param": "Cable1 To",
+          "widget": "slider",
+          "overlay": "menu"
+        },
+        {
+          "param": "Cable1 Amt",
+          "widget": "knob",
+          "polarity": "bipolar"
+        },
+        {
+          "widget": "empty"
+        },
+        {
+          "param": "Cable2 From",
+          "widget": "slider",
+          "overlay": "menu"
+        },
+        {
+          "param": "Cable2 To",
+          "widget": "slider",
+          "overlay": "menu"
+        },
+        {
+          "param": "Cable2 Amt",
+          "widget": "knob",
+          "polarity": "bipolar"
+        },
+        {
+          "widget": "empty"
+        },
+        {
+          "param": "Cable3 From",
+          "widget": "slider",
+          "overlay": "menu"
+        },
+        {
+          "param": "Cable3 To",
+          "widget": "slider",
+          "overlay": "menu"
+        },
+        {
+          "param": "Cable3 Amt",
+          "widget": "knob",
+          "polarity": "bipolar"
+        },
+        {
+          "widget": "empty"
+        },
+        {
+          "param": "Cable4 From",
+          "widget": "slider",
+          "overlay": "menu"
+        },
+        {
+          "param": "Cable4 To",
+          "widget": "slider",
+          "overlay": "menu"
+        },
+        {
+          "param": "Cable4 Amt",
+          "widget": "knob",
+          "polarity": "bipolar"
+        },
+        {
+          "widget": "empty"
+        }
+      ]
+    }
+  ]
+}

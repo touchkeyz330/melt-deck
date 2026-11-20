@@ -1,0 +1,17 @@
+{
+  "name": "Melt-Tune",
+  "manufacturer": "Meltdown Empire",
+  "version": "1.0.0",
+  "format": "vst2",
+  "kind": "effect",
+  "uid": "MssA",
+  "numInputs": 2,
+  "numOutputs": 2,
+  "category": "Pitch",
+  "file32": "VST/melt-tune-arm32.so",
+  "file64": "VST/melt-tune-arm64.so",
+  "description": "Melt-Tune: real-time vocal pitch correction. Key and scale, Retune speed from natural to hard robotic, Amount, Transpose, Voice range, Mix.",
+  "author": "Meltdown Empire",
+  "url": "",
+  "license": "MIT"
+}

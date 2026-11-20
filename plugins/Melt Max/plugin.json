@@ -1,0 +1,17 @@
+{
+  "name": "Melt Max",
+  "manufacturer": "Meltdown Empire",
+  "version": "1.0.0",
+  "format": "vst2",
+  "kind": "effect",
+  "uid": "MRBy",
+  "numInputs": 2,
+  "numOutputs": 2,
+  "category": "Dynamics",
+  "file32": "VST/melt-max-arm32.so",
+  "file64": "VST/melt-max-arm64.so",
+  "description": "Melt Max: a look-ahead brickwall mastering limiter. Pull Threshold down to get louder; nothing passes the Ceiling, true peaks included. Auto release, dither to 24 or 16 bit.",
+  "author": "Meltdown Empire",
+  "url": "",
+  "license": "MIT"
+}

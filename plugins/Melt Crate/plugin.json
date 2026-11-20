@@ -1,0 +1,17 @@
+{
+  "name": "Melt Crate",
+  "manufacturer": "Meltdown Empire",
+  "version": "1.0.0",
+  "format": "vst2",
+  "kind": "instrument",
+  "uid": "MLQx",
+  "numInputs": 0,
+  "numOutputs": 2,
+  "category": "Synth",
+  "file32": "VST/melt-crate-arm32.so",
+  "file64": "VST/melt-crate-arm64.so",
+  "description": "Melt Crate: an early-90s keyboard-sampler style instrument. Plays your WAVs and multisample folders with loop modes, chopping across pads, dual filter, envelopes, LFO, Clean/Vintage/Crunch/Dusty character, chorus, delay and reverb.",
+  "author": "Meltdown Empire",
+  "url": "",
+  "license": "MIT"
+}

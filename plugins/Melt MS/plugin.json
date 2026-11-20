@@ -1,0 +1,17 @@
+{
+  "name": "Melt MS",
+  "manufacturer": "Meltdown Empire",
+  "version": "1.0.0",
+  "format": "vst2",
+  "kind": "instrument",
+  "uid": "MNYo",
+  "numInputs": 0,
+  "numOutputs": 2,
+  "category": "Synth",
+  "file32": "VST/melt-ms-arm32.so",
+  "file64": "VST/melt-ms-arm64.so",
+  "description": "Melt MS: a semi-modular dual-filter monosynth (HP + LP that scream) with a 4-cable virtual patch panel fed by MPC pads, pressure, touch strip and bend.",
+  "author": "Meltdown Empire",
+  "url": "",
+  "license": "MIT"
+}

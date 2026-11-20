@@ -1,0 +1,347 @@
+{
+  "pages": [
+    {
+      "name": "OSC",
+      "controls": [
+        {
+          "param": "Osc1 Wave",
+          "widget": "slider",
+          "overlay": "menu"
+        },
+        {
+          "param": "Osc1 PW",
+          "widget": "knob"
+        },
+        {
+          "param": "Osc1 Table",
+          "widget": "knob"
+        },
+        {
+          "param": "Osc1 Density",
+          "widget": "knob"
+        },
+        {
+          "param": "Osc1 Detune",
+          "widget": "knob"
+        },
+        {
+          "param": "Osc2 Wave",
+          "widget": "slider",
+          "overlay": "menu"
+        },
+        {
+          "param": "Osc2 PW",
+          "widget": "knob"
+        },
+        {
+          "param": "Osc2 Table",
+          "widget": "knob"
+        },
+        {
+          "param": "Osc2 Density",
+          "widget": "knob"
+        },
+        {
+          "param": "Osc2 Detune",
+          "widget": "knob"
+        },
+        {
+          "param": "Osc2 Semi",
+          "widget": "knob",
+          "polarity": "bipolar"
+        },
+        {
+          "param": "Osc2 Fine",
+          "widget": "knob",
+          "polarity": "bipolar"
+        },
+        {
+          "param": "Sync",
+          "widget": "switch"
+        },
+        {
+          "param": "FM",
+          "widget": "knob"
+        },
+        {
+          "param": "Env>Osc2",
+          "widget": "knob",
+          "polarity": "bipolar"
+        }
+      ]
+    },
+    {
+      "name": "MIX",
+      "controls": [
+        {
+          "param": "Osc Bal",
+          "widget": "knob"
+        },
+        {
+          "param": "Sub",
+          "widget": "knob"
+        },
+        {
+          "param": "Sub Wave",
+          "widget": "switch"
+        },
+        {
+          "param": "Noise",
+          "widget": "knob"
+        },
+        {
+          "param": "Ring",
+          "widget": "knob"
+        },
+        {
+          "param": "Unison",
+          "widget": "knob"
+        },
+        {
+          "param": "Uni Detune",
+          "widget": "knob"
+        },
+        {
+          "param": "Uni Spread",
+          "widget": "knob"
+        },
+        {
+          "param": "Key Mode",
+          "widget": "slider",
+          "overlay": "menu"
+        },
+        {
+          "param": "Glide",
+          "widget": "knob"
+        },
+        {
+          "param": "Bend Range",
+          "widget": "knob"
+        },
+        {
+          "param": "Voices",
+          "widget": "knob"
+        },
+        {
+          "param": "Volume",
+          "widget": "fader"
+        }
+      ]
+    },
+    {
+      "name": "FILTER",
+      "controls": [
+        {
+          "param": "Filter 1",
+          "widget": "slider",
+          "overlay": "menu"
+        },
+        {
+          "param": "Cutoff",
+          "widget": "knob"
+        },
+        {
+          "param": "Resonance",
+          "widget": "knob"
+        },
+        {
+          "param": "Filter 2",
+          "widget": "slider",
+          "overlay": "menu"
+        },
+        {
+          "param": "F2 Offset",
+          "widget": "knob",
+          "polarity": "bipolar"
+        },
+        {
+          "param": "F2 Reso",
+          "widget": "knob"
+        },
+        {
+          "param": "Routing",
+          "widget": "switch"
+        },
+        {
+          "param": "Drive",
+          "widget": "knob"
+        },
+        {
+          "param": "Env Amount",
+          "widget": "knob",
+          "polarity": "bipolar"
+        },
+        {
+          "param": "Key Track",
+          "widget": "knob"
+        },
+        {
+          "param": "Vel>Filter",
+          "widget": "knob"
+        }
+      ]
+    },
+    {
+      "name": "ENV",
+      "controls": [
+        {
+          "param": "F Attack",
+          "widget": "knob"
+        },
+        {
+          "param": "F Decay",
+          "widget": "knob"
+        },
+        {
+          "param": "F Sustain",
+          "widget": "knob"
+        },
+        {
+          "param": "F Release",
+          "widget": "knob"
+        },
+        {
+          "param": "Attack",
+          "widget": "knob"
+        },
+        {
+          "param": "Decay",
+          "widget": "knob"
+        },
+        {
+          "param": "Sustain",
+          "widget": "knob"
+        },
+        {
+          "param": "Release",
+          "widget": "knob"
+        },
+        {
+          "param": "Vel>Amp",
+          "widget": "knob"
+        }
+      ]
+    },
+    {
+      "name": "LFO",
+      "controls": [
+        {
+          "param": "LFO1 Rate",
+          "widget": "knob"
+        },
+        {
+          "param": "LFO1 Sync",
+          "widget": "slider",
+          "overlay": "menu"
+        },
+        {
+          "param": "LFO1 Shape",
+          "widget": "slider",
+          "overlay": "menu"
+        },
+        {
+          "param": "LFO1>Pitch",
+          "widget": "knob"
+        },
+        {
+          "param": "LFO1>PW",
+          "widget": "knob"
+        },
+        {
+          "param": "LFO1>Table",
+          "widget": "knob"
+        },
+        {
+          "param": "LFO1>Cutoff",
+          "widget": "knob"
+        },
+        {
+          "param": "LFO2 Rate",
+          "widget": "knob"
+        },
+        {
+          "param": "LFO2 Sync",
+          "widget": "slider",
+          "overlay": "menu"
+        },
+        {
+          "param": "LFO2 Shape",
+          "widget": "slider",
+          "overlay": "menu"
+        },
+        {
+          "param": "LFO2>Cutoff",
+          "widget": "knob"
+        },
+        {
+          "param": "LFO2>Pan",
+          "widget": "knob"
+        },
+        {
+          "param": "LFO2>Amp",
+          "widget": "knob"
+        }
+      ]
+    },
+    {
+      "name": "ARP/FX",
+      "controls": [
+        {
+          "param": "Arp",
+          "widget": "switch"
+        },
+        {
+          "param": "Arp Mode",
+          "widget": "slider",
+          "overlay": "menu"
+        },
+        {
+          "param": "Arp Rate",
+          "widget": "slider",
+          "overlay": "menu"
+        },
+        {
+          "param": "Arp Octave",
+          "widget": "knob"
+        },
+        {
+          "param": "Arp Gate",
+          "widget": "knob"
+        },
+        {
+          "param": "Distortion",
+          "widget": "knob"
+        },
+        {
+          "param": "Chorus",
+          "widget": "knob"
+        },
+        {
+          "param": "Chorus Rate",
+          "widget": "knob"
+        },
+        {
+          "param": "Delay",
+          "widget": "knob"
+        },
+        {
+          "param": "Delay Time",
+          "widget": "slider",
+          "overlay": "menu"
+        },
+        {
+          "param": "Delay Fdbk",
+          "widget": "knob"
+        },
+        {
+          "param": "Reverb",
+          "widget": "knob"
+        },
+        {
+          "param": "Reverb Time",
+          "widget": "knob"
+        }
+      ]
+    }
+  ]
+}

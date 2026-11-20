@@ -1,0 +1,65 @@
+{
+  "pages": [
+    {
+      "name": "STUTTER",
+      "controls": [
+        {
+          "param": "Stutter",
+          "widget": "switch"
+        },
+        {
+          "param": "Rate",
+          "widget": "slider",
+          "overlay": "menu"
+        },
+        {
+          "param": "Gate",
+          "widget": "knob"
+        },
+        {
+          "param": "Roll",
+          "widget": "switch"
+        },
+        {
+          "param": "Pitch",
+          "widget": "knob",
+          "polarity": "bipolar"
+        },
+        {
+          "param": "Fade",
+          "widget": "knob"
+        },
+        {
+          "param": "Reverse",
+          "widget": "switch"
+        },
+        {
+          "param": "Mix",
+          "widget": "knob"
+        }
+      ]
+    },
+    {
+      "name": "AUTO",
+      "controls": [
+        {
+          "param": "Auto",
+          "widget": "switch"
+        },
+        {
+          "param": "Chance",
+          "widget": "knob"
+        },
+        {
+          "param": "Auto Len",
+          "widget": "switch"
+        },
+        {
+          "param": "Quantize",
+          "widget": "slider",
+          "overlay": "menu"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "name": "Melt Stutter",
+  "manufacturer": "Meltdown Empire",
+  "version": "1.0.0",
+  "format": "vst2",
+  "kind": "effect",
+  "uid": "MXBC",
+  "numInputs": 2,
+  "numOutputs": 2,
+  "category": "Delay",
+  "file32": "VST/melt-stutter-arm32.so",
+  "file64": "VST/melt-stutter-arm64.so",
+  "description": "Melt Stutter: tempo-synced stutter and beat repeat. Grab a slice on the grid and repeat it with gate, rolls that speed up or slow down, pitch dives, fades and reverse; Auto mode fires it for you.",
+  "author": "Meltdown Empire",
+  "url": "",
+  "license": "MIT"
+}

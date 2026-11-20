@@ -1,0 +1,31 @@
+{
+  "pages": [
+    {
+      "name": "PITCH",
+      "controls": [
+        {
+          "param": "Pitch",
+          "widget": "knob",
+          "polarity": "bipolar"
+        }
+      ]
+    },
+    {
+      "name": "SETUP",
+      "controls": [
+        {
+          "param": "Snap",
+          "widget": "switch"
+        },
+        {
+          "param": "Mode",
+          "widget": "switch"
+        },
+        {
+          "param": "Mix",
+          "widget": "knob"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "name": "Melt Rack",
+  "manufacturer": "Meltdown Empire",
+  "version": "1.0.0",
+  "format": "vst2",
+  "kind": "instrument",
+  "uid": "Muyo",
+  "numInputs": 0,
+  "numOutputs": 2,
+  "category": "Synth",
+  "file32": "VST/melt-rack-arm32.so",
+  "file64": "VST/melt-rack-arm64.so",
+  "description": "Melt Rack: a 4-tone rack synth in the 90s style. Each tone has its own wave, filter, envelopes and LFO; ring structure, mono glide, EFX, chorus and reverb. 16 original patches; add your own WAVs in Content/Waves.",
+  "author": "Meltdown Empire",
+  "url": "",
+  "license": "MIT"
+}

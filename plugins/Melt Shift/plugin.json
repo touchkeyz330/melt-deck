@@ -1,0 +1,17 @@
+{
+  "name": "Melt Shift",
+  "manufacturer": "Meltdown Empire",
+  "version": "1.0.0",
+  "format": "vst2",
+  "kind": "effect",
+  "uid": "MFWp",
+  "numInputs": 2,
+  "numOutputs": 2,
+  "category": "Effect",
+  "file32": "VST/melt-shift-arm32.so",
+  "file64": "VST/melt-shift-arm64.so",
+  "description": "Melt Shift: a one-knob pitch shifter. Centre is the original pitch, left goes down, right goes up (12 semitones each way); tempo never changes. Smooth mode for melodies, chords and mixes, Punchy mode for drums.",
+  "author": "Meltdown Empire",
+  "url": "",
+  "license": "MIT"
+}

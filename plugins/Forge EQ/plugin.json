@@ -1,0 +1,17 @@
+{
+  "name": "Forge EQ",
+  "manufacturer": "Meltdown Empire",
+  "version": "1.0.0",
+  "format": "vst2",
+  "kind": "effect",
+  "uid": "MJoy",
+  "numInputs": 2,
+  "numOutputs": 2,
+  "category": "EQ",
+  "file32": "VST/forge-eq-arm32.so",
+  "file64": "VST/forge-eq-arm64.so",
+  "description": "Forge EQ: console-style preamp with transformer-flavoured saturation and a stepped 3-band EQ with 18 dB/oct high-pass.",
+  "author": "Meltdown Empire",
+  "url": "",
+  "license": "MIT"
+}

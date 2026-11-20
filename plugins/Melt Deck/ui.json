@@ -1,0 +1,50 @@
+{
+  "pages": [
+    { "name": "MIX",
+      "controls": [
+        { "param": "A Volume",   "widget": "fader" },
+        { "param": "Crossfader", "widget": "fader", "polarity": "bipolar" },
+        { "param": "Master",     "widget": "knob" },
+        { "param": "B Volume",   "widget": "fader" },
+        { "param": "A Filter",   "widget": "knob", "polarity": "bipolar" },
+        { "param": "A Echo",     "widget": "knob" },
+        { "param": "B Echo",     "widget": "knob" },
+        { "param": "B Filter",   "widget": "knob", "polarity": "bipolar" },
+        { "param": "A Remain",   "widget": "slider" },
+        { "param": "A BPM",      "widget": "slider" },
+        { "param": "B BPM",      "widget": "slider" },
+        { "param": "B Remain",   "widget": "slider" },
+        { "param": "X Curve",    "widget": "switch" }
+      ] },
+    { "name": "DECK A",
+      "controls": [
+        { "param": "A Track",    "widget": "slider", "overlay": "menu" },
+        { "param": "A Play",     "widget": "switch" },
+        { "param": "A Pitch",    "widget": "fader", "polarity": "bipolar" },
+        { "param": "A Key Lock", "widget": "switch" },
+        { "param": "A Low",      "widget": "knob", "polarity": "bipolar" },
+        { "param": "A Mid",      "widget": "knob", "polarity": "bipolar" },
+        { "param": "A High",     "widget": "knob", "polarity": "bipolar" },
+        { "param": "A Range",    "widget": "switch" },
+        { "param": "A Status",   "widget": "slider" },
+        { "param": "A Key",      "widget": "slider" },
+        { "param": "A Loop",     "widget": "slider", "overlay": "menu" },
+        { "param": "A Volume",   "widget": "fader" }
+      ] },
+    { "name": "DECK B",
+      "controls": [
+        { "param": "B Track",    "widget": "slider", "overlay": "menu" },
+        { "param": "B Play",     "widget": "switch" },
+        { "param": "B Pitch",    "widget": "fader", "polarity": "bipolar" },
+        { "param": "B Key Lock", "widget": "switch" },
+        { "param": "B Low",      "widget": "knob", "polarity": "bipolar" },
+        { "param": "B Mid",      "widget": "knob", "polarity": "bipolar" },
+        { "param": "B High",     "widget": "knob", "polarity": "bipolar" },
+        { "param": "B Range",    "widget": "switch" },
+        { "param": "B Status",   "widget": "slider" },
+        { "param": "B Key",      "widget": "slider" },
+        { "param": "B Loop",     "widget": "slider", "overlay": "menu" },
+        { "param": "B Volume",   "widget": "fader" }
+      ] }
+  ]
+}

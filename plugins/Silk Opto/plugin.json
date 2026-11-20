@@ -1,0 +1,17 @@
+{
+  "name": "Silk Opto",
+  "manufacturer": "Meltdown Empire",
+  "version": "1.0.0",
+  "format": "vst2",
+  "kind": "effect",
+  "uid": "M2gx",
+  "numInputs": 2,
+  "numOutputs": 2,
+  "category": "Dynamics",
+  "file32": "VST/silk-opto-arm32.so",
+  "file64": "VST/silk-opto-arm64.so",
+  "description": "Silk Opto: optical-style tube compressor with program-dependent release, side-chain high-pass, parallel mix and stereo link.",
+  "author": "Meltdown Empire",
+  "url": "",
+  "license": "MIT"
+}

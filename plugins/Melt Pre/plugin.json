@@ -1,0 +1,17 @@
+{
+  "name": "Melt Pre",
+  "manufacturer": "Meltdown Empire",
+  "version": "1.0.0",
+  "format": "vst2",
+  "kind": "effect",
+  "uid": "MnSV",
+  "numInputs": 2,
+  "numOutputs": 2,
+  "category": "Distortion",
+  "file32": "VST/melt-pre-arm32.so",
+  "file64": "VST/melt-pre-arm64.so",
+  "description": "Melt Pre: a British-style two-stage class-A mic preamp. Stepped gain, transformer iron, Lo/Hi impedance, 18 dB/oct high-pass, phase and auto trim. Warmth on vocals, drums, bass and samples.",
+  "author": "Meltdown Empire",
+  "url": "",
+  "license": "MIT"
+}
