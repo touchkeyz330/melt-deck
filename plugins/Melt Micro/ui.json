@@ -186,6 +186,7 @@
           "widget": "knob",
           "polarity": "bipolar"
         },
+        "empty",
         {
           "param": "Patch2 Src",
           "widget": "slider",
@@ -201,6 +202,7 @@
           "widget": "knob",
           "polarity": "bipolar"
         },
+        "empty",
         {
           "param": "Patch3 Src",
           "widget": "slider",
@@ -216,6 +218,7 @@
           "widget": "knob",
           "polarity": "bipolar"
         },
+        "empty",
         {
           "param": "Patch4 Src",
           "widget": "slider",
@@ -230,7 +233,8 @@
           "param": "Patch4 Amt",
           "widget": "knob",
           "polarity": "bipolar"
-        }
+        },
+        "empty"
       ]
     },
     {

@@ -1,0 +1,283 @@
+{
+    "version": 4,
+    "info": {
+        "version": 1,
+        "type": "CompleteDescription"
+    },
+    "Screen Mode Q-Links": {
+        "version": 4,
+        "map": [
+            {
+                "Tab": 1,
+                "SubTab": 1,
+                "Bank Direction": "RowTopDown",
+                "Q-Links": {
+                    "Q-Link 1": 8,
+                    "Q-Link 2": 13,
+                    "Q-Link 3": 15,
+                    "Q-Link 4": 0,
+                    "Q-Link 5": 35,
+                    "Q-Link 6": 38,
+                    "Q-Link 7": 66,
+                    "Q-Link 8": 69,
+                    "Q-Link 9": 19,
+                    "Q-Link 10": 50,
+                    "Q-Link 11": 81,
+                    "Q-Link 12": 112,
+                    "Q-Link 13": 27,
+                    "Q-Link 14": 58,
+                    "Q-Link 15": 89,
+                    "Q-Link 16": 120
+                }
+            },
+            {
+                "Tab": 2,
+                "SubTab": 1,
+                "Bank Direction": "RowTopDown",
+                "Q-Links": {
+                    "Q-Link 1": 50,
+                    "Q-Link 2": 81,
+                    "Q-Link 3": 112,
+                    "Q-Link 4": -1,
+                    "Q-Link 5": 48,
+                    "Q-Link 6": 79,
+                    "Q-Link 7": 110,
+                    "Q-Link 8": 19,
+                    "Q-Link 9": 6,
+                    "Q-Link 10": 4,
+                    "Q-Link 11": 5,
+                    "Q-Link 12": 17,
+                    "Q-Link 13": 0,
+                    "Q-Link 14": 1,
+                    "Q-Link 15": 2,
+                    "Q-Link 16": 3
+                }
+            },
+            {
+                "Tab": 2,
+                "SubTab": 2,
+                "Bank Direction": "RowTopDown",
+                "Q-Links": {
+                    "Q-Link 1": -1,
+                    "Q-Link 2": -1,
+                    "Q-Link 3": -1,
+                    "Q-Link 4": -1,
+                    "Q-Link 5": 15,
+                    "Q-Link 6": 16,
+                    "Q-Link 7": -1,
+                    "Q-Link 8": -1,
+                    "Q-Link 9": 11,
+                    "Q-Link 10": 12,
+                    "Q-Link 11": 13,
+                    "Q-Link 12": 14,
+                    "Q-Link 13": 7,
+                    "Q-Link 14": 8,
+                    "Q-Link 15": 9,
+                    "Q-Link 16": 10
+                }
+            },
+            {
+                "Tab": 3,
+                "SubTab": 1,
+                "Bank Direction": "RowTopDown",
+                "Q-Links": {
+                    "Q-Link 1": 27,
+                    "Q-Link 2": 28,
+                    "Q-Link 3": 29,
+                    "Q-Link 4": 30,
+                    "Q-Link 5": 25,
+                    "Q-Link 6": 46,
+                    "Q-Link 7": 47,
+                    "Q-Link 8": 26,
+                    "Q-Link 9": 21,
+                    "Q-Link 10": 22,
+                    "Q-Link 11": 23,
+                    "Q-Link 12": 24,
+                    "Q-Link 13": 17,
+                    "Q-Link 14": 18,
+                    "Q-Link 15": 19,
+                    "Q-Link 16": 20
+                }
+            },
+            {
+                "Tab": 3,
+                "SubTab": 2,
+                "Bank Direction": "RowTopDown",
+                "Q-Links": {
+                    "Q-Link 1": 43,
+                    "Q-Link 2": 44,
+                    "Q-Link 3": 45,
+                    "Q-Link 4": -1,
+                    "Q-Link 5": 39,
+                    "Q-Link 6": 40,
+                    "Q-Link 7": 41,
+                    "Q-Link 8": 42,
+                    "Q-Link 9": 35,
+                    "Q-Link 10": 36,
+                    "Q-Link 11": 37,
+                    "Q-Link 12": 38,
+                    "Q-Link 13": 31,
+                    "Q-Link 14": 32,
+                    "Q-Link 15": 33,
+                    "Q-Link 16": 34
+                }
+            },
+            {
+                "Tab": 4,
+                "SubTab": 1,
+                "Bank Direction": "RowTopDown",
+                "Q-Links": {
+                    "Q-Link 1": 58,
+                    "Q-Link 2": 59,
+                    "Q-Link 3": 60,
+                    "Q-Link 4": 61,
+                    "Q-Link 5": 56,
+                    "Q-Link 6": 77,
+                    "Q-Link 7": 78,
+                    "Q-Link 8": 57,
+                    "Q-Link 9": 52,
+                    "Q-Link 10": 53,
+                    "Q-Link 11": 54,
+                    "Q-Link 12": 55,
+                    "Q-Link 13": 48,
+                    "Q-Link 14": 49,
+                    "Q-Link 15": 50,
+                    "Q-Link 16": 51
+                }
+            },
+            {
+                "Tab": 4,
+                "SubTab": 2,
+                "Bank Direction": "RowTopDown",
+                "Q-Links": {
+                    "Q-Link 1": 74,
+                    "Q-Link 2": 75,
+                    "Q-Link 3": 76,
+                    "Q-Link 4": -1,
+                    "Q-Link 5": 70,
+                    "Q-Link 6": 71,
+                    "Q-Link 7": 72,
+                    "Q-Link 8": 73,
+                    "Q-Link 9": 66,
+                    "Q-Link 10": 67,
+                    "Q-Link 11": 68,
+                    "Q-Link 12": 69,
+                    "Q-Link 13": 62,
+                    "Q-Link 14": 63,
+                    "Q-Link 15": 64,
+                    "Q-Link 16": 65
+                }
+            },
+            {
+                "Tab": 5,
+                "SubTab": 1,
+                "Bank Direction": "RowTopDown",
+                "Q-Links": {
+                    "Q-Link 1": 89,
+                    "Q-Link 2": 90,
+                    "Q-Link 3": 91,
+                    "Q-Link 4": 92,
+                    "Q-Link 5": 87,
+                    "Q-Link 6": 108,
+                    "Q-Link 7": 109,
+                    "Q-Link 8": 88,
+                    "Q-Link 9": 83,
+                    "Q-Link 10": 84,
+                    "Q-Link 11": 85,
+                    "Q-Link 12": 86,
+                    "Q-Link 13": 79,
+                    "Q-Link 14": 80,
+                    "Q-Link 15": 81,
+                    "Q-Link 16": 82
+                }
+            },
+            {
+                "Tab": 5,
+                "SubTab": 2,
+                "Bank Direction": "RowTopDown",
+                "Q-Links": {
+                    "Q-Link 1": 105,
+                    "Q-Link 2": 106,
+                    "Q-Link 3": 107,
+                    "Q-Link 4": -1,
+                    "Q-Link 5": 101,
+                    "Q-Link 6": 102,
+                    "Q-Link 7": 103,
+                    "Q-Link 8": 104,
+                    "Q-Link 9": 97,
+                    "Q-Link 10": 98,
+                    "Q-Link 11": 99,
+                    "Q-Link 12": 100,
+                    "Q-Link 13": 93,
+                    "Q-Link 14": 94,
+                    "Q-Link 15": 95,
+                    "Q-Link 16": 96
+                }
+            },
+            {
+                "Tab": 6,
+                "SubTab": 1,
+                "Bank Direction": "RowTopDown",
+                "Q-Links": {
+                    "Q-Link 1": 120,
+                    "Q-Link 2": 121,
+                    "Q-Link 3": 122,
+                    "Q-Link 4": 123,
+                    "Q-Link 5": 118,
+                    "Q-Link 6": 139,
+                    "Q-Link 7": 140,
+                    "Q-Link 8": 119,
+                    "Q-Link 9": 114,
+                    "Q-Link 10": 115,
+                    "Q-Link 11": 116,
+                    "Q-Link 12": 117,
+                    "Q-Link 13": 110,
+                    "Q-Link 14": 111,
+                    "Q-Link 15": 112,
+                    "Q-Link 16": 113
+                }
+            },
+            {
+                "Tab": 6,
+                "SubTab": 2,
+                "Bank Direction": "RowTopDown",
+                "Q-Links": {
+                    "Q-Link 1": 136,
+                    "Q-Link 2": 137,
+                    "Q-Link 3": 138,
+                    "Q-Link 4": -1,
+                    "Q-Link 5": 132,
+                    "Q-Link 6": 133,
+                    "Q-Link 7": 134,
+                    "Q-Link 8": 135,
+                    "Q-Link 9": 128,
+                    "Q-Link 10": 129,
+                    "Q-Link 11": 130,
+                    "Q-Link 12": 131,
+                    "Q-Link 13": 124,
+                    "Q-Link 14": 125,
+                    "Q-Link 15": 126,
+                    "Q-Link 16": 127
+                }
+            }
+        ]
+    },
+    "Program Mode Q-Links": {
+        "Q-Link 1": 120,
+        "Q-Link 2": 112,
+        "Q-Link 3": 69,
+        "Q-Link 4": 0,
+        "Q-Link 5": 89,
+        "Q-Link 6": 81,
+        "Q-Link 7": 66,
+        "Q-Link 8": 15,
+        "Q-Link 9": 58,
+        "Q-Link 10": 50,
+        "Q-Link 11": 38,
+        "Q-Link 12": 13,
+        "Q-Link 13": 27,
+        "Q-Link 14": 19,
+        "Q-Link 15": 35,
+        "Q-Link 16": 8
+    }
+}
