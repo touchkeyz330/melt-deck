@@ -4,22 +4,22 @@ Using zig 0.17.1 (from --zig)
 
 [1/7] Native build (for host_sim and testing on this computer)
   [native] compiling 1 source file -> build/native/melt-pre.so
-  [native] ok (2.4 MB, 1.0s)
+  [native] ok (2.4 MB, 1.5s)
 
 [2/7] Parameter dump (host_sim) -> build/params.json
   host_sim dump -> build/params.json
 
 [3/7] arm32 build (MPC Live/X/One (32-bit))
   [arm32] compiling 1 source file -> build/Meltdown Empire - VST - Melt Pre/VST/melt-pre-arm32.so
-  [arm32] ok (200 KB, 0.8s)
+  [arm32] ok (200 KB, 1.2s)
 
 [4/7] arm64 build (MPC Live II/One+/Key 61/X SE/3 (64-bit))
   [arm64] compiling 1 source file -> build/Meltdown Empire - VST - Melt Pre/VST/melt-pre-arm64.so
-  [arm64] ok (245 KB, 0.9s)
+  [arm64] ok (245 KB, 1.4s)
 
 [5/7] Assemble output folder: build/Meltdown Empire - VST - Melt Pre/
   copied plugin.json
-  gen_ui.py (ui.json) -> Plugin Skins/
+  copying hand-written skins/ -> Plugin Skins/ (gen_ui.py not run)
 
 [6/7] version.xml
   version 1.0.0.0, uiversion 0.1.0.0
@@ -43,6 +43,7 @@ OK     kind matches the binary (effect)
 OK     numInputs matches the binary (2)
 OK     numOutputs matches the binary (2)
 OK     TUI.json: all parameter handles are within 0..7
+OK     TUI.json: image bg_01.jpg present
 OK     TUI.json: image knob_bi.png present
 OK     TUI.json: image knob_uni.png present
 OK     TUI.json: image seg2_off.png present
@@ -60,13 +61,20 @@ Build finished: Meltdown Empire - VST - Melt Pre
     plugin.json                              553 B
     version.xml                              152 B
     Plugin Skins/Q-Links.json                1 KB
-    Plugin Skins/TUI.json                    67 KB
-    Plugin Skins/knob_bi.png                 80 KB
-    Plugin Skins/knob_uni.png                79 KB
-    Plugin Skins/seg2_off.png                586 B
-    Plugin Skins/seg2_on.png                 597 B
-    Plugin Skins/toggle_off.png              1 KB
-    Plugin Skins/toggle_on.png               1 KB
+    Plugin Skins/TUI.json                    68 KB
+    Plugin Skins/bg_01.jpg                   138 KB
+    Plugin Skins/fader_h_bi.png              366 KB
+    Plugin Skins/fader_h_uni.png             353 KB
+    Plugin Skins/knob_bi.png                 975 KB
+    Plugin Skins/knob_uni.png                965 KB
+    Plugin Skins/seg2_off.png                942 B
+    Plugin Skins/seg2_on.png                 1 KB
+    Plugin Skins/seg3_off.png                924 B
+    Plugin Skins/seg3_on.png                 1 KB
+    Plugin Skins/seg4_off.png                896 B
+    Plugin Skins/seg4_on.png                 1 KB
+    Plugin Skins/toggle_off.png              2 KB
+    Plugin Skins/toggle_on.png               3 KB
     VST/melt-pre-arm32.so                    200 KB
     VST/melt-pre-arm64.so                    245 KB
   Native test build: /home/runner/work/melt-deck/melt-deck/plugins/Melt Pre/build/native/melt-pre.so

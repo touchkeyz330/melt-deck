@@ -4,7 +4,7 @@ Using zig 0.17.1 (from --zig)
 
 [1/7] Native build (for host_sim and testing on this computer)
   [native] compiling 1 source file -> build/native/font-box.so
-  [native] ok (3.7 MB, 24.2s)
+  [native] ok (3.7 MB, 35.5s)
 
 [2/7] Parameter dump (host_sim) -> build/params.json
   building host_sim (first use) -> /home/runner/work/melt-deck/melt-deck/.sdk-tools/host_sim
@@ -12,15 +12,15 @@ Using zig 0.17.1 (from --zig)
 
 [3/7] arm32 build (MPC Live/X/One (32-bit))
   [arm32] compiling 1 source file -> build/Meltdown Empire - VST - Font Box/VST/font-box-arm32.so
-  [arm32] ok (259 KB, 19.1s)
+  [arm32] ok (259 KB, 29.4s)
 
 [4/7] arm64 build (MPC Live II/One+/Key 61/X SE/3 (64-bit))
   [arm64] compiling 1 source file -> build/Meltdown Empire - VST - Font Box/VST/font-box-arm64.so
-  [arm64] ok (320 KB, 20.4s)
+  [arm64] ok (320 KB, 31.3s)
 
 [5/7] Assemble output folder: build/Meltdown Empire - VST - Font Box/
   copied plugin.json
-  gen_ui.py (ui.json) -> Plugin Skins/
+  copying hand-written skins/ -> Plugin Skins/ (gen_ui.py not run)
   copied 1 file from Content/ into Content/
 
 [6/7] version.xml
@@ -45,6 +45,7 @@ OK     kind matches the binary (instrument)
 OK     numInputs matches the binary (0)
 OK     numOutputs matches the binary (2)
 OK     TUI.json: all parameter handles are within 0..11
+OK     TUI.json: image bg_01.jpg present
 OK     TUI.json: image fader_h_uni.png present
 OK     TUI.json: image knob_bi.png present
 OK     TUI.json: image knob_uni.png present
@@ -61,10 +62,20 @@ Build finished: Meltdown Empire - VST - Font Box
     version.xml                              152 B
     Content/SoundFonts/MeltdownTest.sf2      200 KB
     Plugin Skins/Q-Links.json                1 KB
-    Plugin Skins/TUI.json                    60 KB
-    Plugin Skins/fader_h_uni.png             98 KB
-    Plugin Skins/knob_bi.png                 80 KB
-    Plugin Skins/knob_uni.png                79 KB
+    Plugin Skins/TUI.json                    61 KB
+    Plugin Skins/bg_01.jpg                   137 KB
+    Plugin Skins/fader_h_bi.png              343 KB
+    Plugin Skins/fader_h_uni.png             330 KB
+    Plugin Skins/knob_bi.png                 755 KB
+    Plugin Skins/knob_uni.png                756 KB
+    Plugin Skins/seg2_off.png                942 B
+    Plugin Skins/seg2_on.png                 2 KB
+    Plugin Skins/seg3_off.png                924 B
+    Plugin Skins/seg3_on.png                 2 KB
+    Plugin Skins/seg4_off.png                896 B
+    Plugin Skins/seg4_on.png                 1 KB
+    Plugin Skins/toggle_off.png              2 KB
+    Plugin Skins/toggle_on.png               3 KB
     VST/font-box-arm32.so                    259 KB
     VST/font-box-arm64.so                    320 KB
   Native test build: /home/runner/work/melt-deck/melt-deck/plugins/Font Box/build/native/font-box.so

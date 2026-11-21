@@ -4,22 +4,22 @@ Using zig 0.17.1 (from --zig)
 
 [1/7] Native build (for host_sim and testing on this computer)
   [native] compiling 1 source file -> build/native/vault.so
-  [native] ok (6.3 MB, 2.1s)
+  [native] ok (6.3 MB, 3.3s)
 
 [2/7] Parameter dump (host_sim) -> build/params.json
   host_sim dump -> build/params.json
 
 [3/7] arm32 build (MPC Live/X/One (32-bit))
   [arm32] compiling 1 source file -> build/Meltdown Empire - VST - Vault/VST/vault-arm32.so
-  [arm32] ok (447 KB, 1.6s)
+  [arm32] ok (447 KB, 2.6s)
 
 [4/7] arm64 build (MPC Live II/One+/Key 61/X SE/3 (64-bit))
   [arm64] compiling 1 source file -> build/Meltdown Empire - VST - Vault/VST/vault-arm64.so
-  [arm64] ok (526 KB, 1.9s)
+  [arm64] ok (526 KB, 2.9s)
 
 [5/7] Assemble output folder: build/Meltdown Empire - VST - Vault/
   copied plugin.json
-  gen_ui.py (ui.json) -> Plugin Skins/
+  copying hand-written skins/ -> Plugin Skins/ (gen_ui.py not run)
   copied 1 file from Content/ into Content/
 
 [6/7] version.xml
@@ -44,6 +44,11 @@ OK     kind matches the binary (instrument)
 OK     numInputs matches the binary (0)
 OK     numOutputs matches the binary (2)
 OK     TUI.json: all parameter handles are within 0..30
+OK     TUI.json: image bg_01.jpg present
+OK     TUI.json: image bg_02.jpg present
+OK     TUI.json: image bg_03.jpg present
+OK     TUI.json: image bg_04.jpg present
+OK     TUI.json: image bg_05.jpg present
 OK     TUI.json: image fader_h_uni.png present
 OK     TUI.json: image knob_bi.png present
 OK     TUI.json: image knob_uni.png present
@@ -53,8 +58,8 @@ OK     TUI.json: image seg3_off.png present
 OK     TUI.json: image seg3_on.png present
 OK     TUI.json: image toggle_off.png present
 OK     TUI.json: image toggle_on.png present
-OK     TUI.json: 4 tabs
-OK     Q-Links.json: 4 tab maps, all values in range
+OK     TUI.json: 5 tabs
+OK     Q-Links.json: 5 tab maps, all values in range
 OK     version.xml uiversion 0.1.0.0
 OK     Content/: 1 file, 0.6 MB (loaded by the plugin at run time, see framework/mpc_resources.h)
 0 errors, 0 warnings
@@ -66,16 +71,24 @@ Build finished: Meltdown Empire - VST - Vault
     version.xml                              152 B
     Content/vault.map                        614 KB
     Plugin Skins/Q-Links.json                4 KB
-    Plugin Skins/TUI.json                    127 KB
-    Plugin Skins/fader_h_uni.png             98 KB
-    Plugin Skins/knob_bi.png                 80 KB
-    Plugin Skins/knob_uni.png                79 KB
-    Plugin Skins/seg2_off.png                586 B
-    Plugin Skins/seg2_on.png                 597 B
-    Plugin Skins/seg3_off.png                573 B
-    Plugin Skins/seg3_on.png                 586 B
-    Plugin Skins/toggle_off.png              1 KB
-    Plugin Skins/toggle_on.png               1 KB
+    Plugin Skins/TUI.json                    155 KB
+    Plugin Skins/bg_01.jpg                   145 KB
+    Plugin Skins/bg_02.jpg                   136 KB
+    Plugin Skins/bg_03.jpg                   140 KB
+    Plugin Skins/bg_04.jpg                   135 KB
+    Plugin Skins/bg_05.jpg                   137 KB
+    Plugin Skins/fader_h_bi.png              371 KB
+    Plugin Skins/fader_h_uni.png             356 KB
+    Plugin Skins/knob_bi.png                 980 KB
+    Plugin Skins/knob_uni.png                972 KB
+    Plugin Skins/seg2_off.png                942 B
+    Plugin Skins/seg2_on.png                 2 KB
+    Plugin Skins/seg3_off.png                924 B
+    Plugin Skins/seg3_on.png                 1 KB
+    Plugin Skins/seg4_off.png                896 B
+    Plugin Skins/seg4_on.png                 1 KB
+    Plugin Skins/toggle_off.png              2 KB
+    Plugin Skins/toggle_on.png               3 KB
     VST/vault-arm32.so                       447 KB
     VST/vault-arm64.so                       526 KB
   Native test build: /home/runner/work/melt-deck/melt-deck/plugins/Vault/build/native/vault.so
